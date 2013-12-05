@@ -2,6 +2,49 @@
 	margin-bottom: 2em;
 }
 
+    .open-button-wrapper {
+        position: relative;
+        width: 100%;
+        margin-top: 1.5em;
+    }
+
+        .open-button {
+            position: absolute;
+            top: 0;
+            width: 2em;
+            height: 2em;
+            background: $springLightGrey;
+            border: 0;
+            @include hide-text();
+            font-size: 1em;
+        }
+
+        .open-main-menu {
+            left: 0;
+
+            /*&:before {
+                content: ' ';
+                display: block;
+                height: .25em;
+                width: 100%;
+                border-top: 6px solid $springWhite;
+                border-bottom: 6px solid $springWhite;
+                margin-bottom: 4px;
+            }
+
+            &:after {
+                content: ' ';
+                display: block;
+                height: 0;
+                width: 100%;
+                border-top: 6px solid $springWhite;
+            }*/
+        }
+
+        .open-sidebar {
+           right: 0;
+        }
+
     .blog-name {
         height: 0;
         @include rem-px(margin-bottom, 1rem);

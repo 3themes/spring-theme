@@ -1,0 +1,21 @@
+.search {
+    width: 60%;
+    @include css3-calc('width', '100% - 7em');
+    @include center-block();
+
+    label {
+        display: none;
+    }
+
+    input[type="text"],
+    input[type="search"] {
+        padding: .5em .25em;
+        border: 1px solid $springLightGrey;
+    }
+
+    input[type=submit] {
+        background: transparent;
+        border: 0;
+
+    }
+}

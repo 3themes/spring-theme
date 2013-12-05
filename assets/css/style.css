@@ -1,5 +1,5 @@
 /*--
-    Theme Name:  Spring Roots
+    Theme Name:  Spring Theme
     Theme URI:  http: //www.github.com/3themes/spring-theme
     Description:  A beautifully vanilla WordPress theme
     Author:  3themes
@@ -687,6 +687,47 @@ tbody tr:hover th {
 .header-main {
   margin-bottom: 2em; }
 
+.open-button-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 1.5em; }
+
+.open-button {
+  position: absolute;
+  top: 0;
+  width: 2em;
+  height: 2em;
+  background: #d3d5cb;
+  border: 0;
+  text-shadow: none;
+  text-indent: 1000%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1em; }
+
+.open-main-menu {
+  left: 0;
+            /*&:before {
+                content: ' ';
+                display: block;
+                height: .25em;
+                width: 100%;
+                border-top: 6px solid $springWhite;
+                border-bottom: 6px solid $springWhite;
+                margin-bottom: 4px;
+            }
+
+            &:after {
+                content: ' ';
+                display: block;
+                height: 0;
+                width: 100%;
+                border-top: 6px solid $springWhite;
+            }*/ }
+
+.open-sidebar {
+  right: 0; }
+
 .blog-name {
   height: 0;
   margin-bottom: 16px;
@@ -817,6 +858,24 @@ tbody tr:hover th {
   margin-top: 1em;
   font-size: .675em;
   text-align: center; }
+
+.search {
+  width: 60%;
+  width: -moz-calc(100% - 7em);
+  width: -webkit-calc(100% - 7em);
+  width: calc(100% - 7em);
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .search label {
+    display: none; }
+  .search input[type="text"],
+  .search input[type="search"] {
+    padding: .5em .25em;
+    border: 1px solid #d3d5cb; }
+  .search input[type=submit] {
+    background: transparent;
+    border: 0; }
 
 code {
   margin: 1em 0; }
