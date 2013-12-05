@@ -1,0 +1,36 @@
+.article-title {
+	margin-bottom: 0;
+
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.article-byline {
+	margin: .25em 0 .5em 0;
+	font-size: .675em;
+	font-style: italic;
+
+	a {
+		font-style: italic;
+	}
+}
+
+.article-footer {
+	padding: .5em;
+	background: $lighterGrey;
+	font-size: .675em;
+
+	a {
+		color: darken($linkColor, 20%);
+	}
+}
+
+.article-hr {
+	width: 50%;
+	margin: 3em auto;
+}
+
+//TODO: Sticky post styles

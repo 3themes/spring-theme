@@ -1,0 +1,51 @@
+/*--
+    Theme Name:  Spring Roots
+    Theme URI:  http: //www.github.com/3themes/spring-theme
+    Description:  A beautifully vanilla WordPress theme
+    Author:  3themes
+    Author URI:  http: //3them.es
+    Version: 0.0.1
+    License: GPLv2
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags: white, light, two-column, flexible-width, right-sidebar, featured-images
+--*/
+
+@import "variables";
+
+@import "sassquatch/sassquatch";
+
+@import "reset-normalize";
+
+@import "general";
+@import "header";
+@import "navigation";
+
+//uncomment if you want multi-level nav
+//@import "navigation-with-subnav";
+
+@import "front-page";
+@import "pages";
+@import "posts";
+@import "comments";
+@import "sidebar";
+@import "footer";
+@import "alignment";
+
+//Some work by Dan
+code {
+    margin:1em 0;
+}
+td {
+	padding: .3em;	
+}
+dt {
+	margin:0 0 .3em;
+}
+dd {
+	margin: 0 1em 1.1em 0;
+	padding-left: .75em;
+	border-left: 0.75em solid #bfbfbf;
+	font-family: "Source Sans Pro", sans-serif;
+	font-style: italic;
+}
+//end some work by dan

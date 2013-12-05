@@ -1,0 +1,37 @@
+.nav-quicklinks {
+    width: 100%;
+    background: $springDarkGrey;
+    padding: .5em 1em;
+
+    a {
+        color: $springWhite;
+    }
+}
+
+.nav-main {
+	text-align: center;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		list-style: none;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+	a {
+		display: block;
+		padding: .125em .375em;
+		@include transition(color .2s);
+
+		&:hover {
+			color: darken($linkColor, 5%);
+		}
+	}
+}

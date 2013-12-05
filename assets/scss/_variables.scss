@@ -1,0 +1,93 @@
+// ---- ---- ---- ---- VARIABLES ---- ---- ---- ----
+
+// Site Colors
+$springGreen: #84b100;
+$springLightGreen: #bada55;
+$springBlack: #322e2f;
+$springDarkGrey: #58595b;
+$springGrey: #92948f;
+$springLightGrey: #d3d5cb;
+$springWhite: #f4f4f1;
+
+// Greys
+$black: rgb(0,0,0); //#000000
+$darkerGrey: lighten($black, 10%);
+$darkGrey: lighten($black, 25%); //#404040
+$midGrey: lighten($black, 50%); //#808080
+$lightGrey: lighten($black, 75%); //#bfbfbf
+$lighterGrey: lighten($black, 90%); //#e6e6e6
+$white: rgb(255,255,255); //#ffffff
+
+// Root
+$bodyColor: $springWhite;
+$textColor: $springDarkGrey;
+$columnMargin: .5em;
+$gutter: 1em;
+$warningColor: red;
+
+// Typography
+$baseFont: 'Source Sans Pro', sans-serif;
+$baseFontSize: 100%;
+$baselineHeight: 1.1em;
+$headingFont: $baseFont;
+$headingLineHeight: 1.1;
+
+$h1Color: $springBlack;
+$h1FontWeight: 200;
+
+$h2Color: $springDarkGrey;
+$h2FontWeight: 200;
+
+$h3Color: $springDarkGrey;
+$h3FontWeight: 200;
+
+$h4Color: $springDarkGrey;
+$h4FontWeight: 200;
+
+$h5Color: $springGrey;
+$h5FontWeight: 300;
+
+$h6Color: $springGrey;
+$h6FontWeight: 200;
+
+$headingTextShadow: none;
+$codeFont: 'Source Code Pro', sans-serif;
+
+// Links
+$linkColor: $springGreen;
+$linkHover: darken($linkColor,10%);
+$linkVisited: darken($linkColor,15%);
+$linkFocus: darken($linkColor,20%);
+
+// Forms
+$textboxBackground: $springWhite;
+$textboxBorderColor: $springGrey;
+$textboxBorderColorActive: $springGreen;
+$textboxBorderWidth: 1px;
+$textboxBorderStyle: solid;
+$textboxColor: $textColor;
+$textboxPlaceholderColor: $springLightGrey;
+$textboxPadding: $gutter / 4;
+
+$buttonBackground: $springGreen;
+$buttonBorderColor: darken($buttonBackground,10%);
+$buttonBorderWidth: 1px;
+$buttonBorderStyle: solid;
+$buttonColor: $springWhite;
+$buttonPadding: .25em .75em;
+
+// Tables
+$tableBackground: transparent;
+$tableStripe: $springLightGrey;
+$tableFontSize: .875em;
+$tableLineHeight: 1.4em;
+$tableBorderWidth: 1px;
+$tableBorderStyle: solid;
+$tableBorderColor: $springLightGrey;
+$tableHover: transparent;
+
+// Breakpoints
+$smallBreakpoint: 30.5em;
+$midBreakpoint: 48.5em;
+$largeBreakpoint: 62.5em;
+$widescreenBreakpoint: 84em;

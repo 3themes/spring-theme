@@ -1,0 +1,116 @@
+.wrapper {
+    max-width: 64.5em;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.youtube {
+    position: relative;
+    height: 0;
+    width: 100%;
+    margin-bottom: 3em;
+    padding-top: 56.25%;
+    z-index: 1;
+
+    &.standard {
+        padding-top: 75%;
+    }
+
+    iframe {
+        position: absolute;
+        top: 0; bottom: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+.alignright,
+.alignleft,
+.aligncenter,
+.alignnone {
+    display: block;
+    width: 100%;
+    margin: 0 0 .5em 0;
+}
+
+.wp-caption {
+    border: 1px solid $lightGrey;
+    padding: .25em;
+    text-align: center;
+}
+
+.wp-caption-text,
+.gallery-caption {
+    font-size: .75em;
+    font-style: italic;
+}
+
+.sticky {
+    header,
+    main {
+        background: darken($bodyColor, 5%);
+    }
+
+    header {
+        padding: 1em;
+    }
+
+    main {
+        padding: 0 1em;
+    }
+
+    footer {
+        border: 1em solid darken($bodyColor, 5%);
+        border-top: 0;
+    }
+}
+
+.error-404 {
+    @include clearfix();
+
+    img {
+        float: right;
+        margin: 0 0 1em 1em;
+    }
+}
+
+@media only screen and (min-width: #{$midBreakpoint}) {
+}
+
+@media only screen and (min-width: #{$smallBreakpoint}) {
+    .alignright {
+        float: right;
+        width: 50%;
+        margin: 0 0 .5em .5em;
+    }
+
+    .alignleft {
+        float: left;
+        width: 50%;
+        margin: 0 .5em .5em 0;
+    }
+
+    .aligncenter {
+        width: auto;
+        margin: .5em auto;
+    }
+
+    .alignnone {
+        float: none;
+        width: auto;
+        margin: 0 .5em .5em 0;
+    }
+}
+
+@media only screen and (min-width: #{$largeBreakpoint}) {
+    //approximate min-width: 992px
+    .content {
+        @include grid-row();
+    }
+
+        .content-main {
+            float: left;
+            @include grid-column(8, 100%, 12);
+            padding-right: 1em;
+        }
+}

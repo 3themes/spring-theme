@@ -1,0 +1,22 @@
+.header-main {
+	margin-bottom: 2em;
+}
+
+    .blog-name {
+        height: 0;
+        @include rem-px(margin-bottom, 1rem);
+        padding-top: 36.1666666667%;
+        background: url(../img/logo.png) no-repeat left top;
+        background-size: 100% auto;
+        @include hide-text();
+    }
+
+@media only screen and (min-width: #{$smallBreakpoint}) {
+    .blog-name {
+        @include rem-px(height, 10rem);
+        @include rem-px(width, 27rem);
+        padding-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
