@@ -1,0 +1,3 @@
+[submodule "assets/scss/sassquatch"]
+	path = assets/scss/sassquatch
+	url = https://github.com/3themes/sassquatch.git
