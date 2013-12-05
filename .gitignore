@@ -1,0 +1,17 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+node_modules
+
+# Sublime project files
+*.sublime-project
+*.sublime-workspace
+
+.sass-cache/
+.sass-cache
+.idea/
+.idea
+
+*.o
+.*.swp
+
+.DS_Store
