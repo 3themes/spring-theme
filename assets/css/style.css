@@ -860,6 +860,7 @@ tbody tr:hover th {
   text-align: center; }
 
 .search {
+  position: relative;
   width: 60%;
   width: -moz-calc(100% - 7em);
   width: -webkit-calc(100% - 7em);
@@ -873,9 +874,20 @@ tbody tr:hover th {
   .search input[type="search"] {
     padding: .5em .25em;
     border: 1px solid #d3d5cb; }
-  .search input[type=submit] {
-    background: transparent;
-    border: 0; }
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #f4f4f1 url(../img/search-icon.png) no-repeat 50% 45%;
+  border: 1px solid #d3d5cb;
+  border-left: 0;
+  width: 2em;
+  text-shadow: none;
+  text-indent: 1000%;
+  white-space: nowrap;
+  overflow: hidden; }
 
 code {
   margin: 1em 0; }

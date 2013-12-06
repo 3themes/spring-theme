@@ -74,10 +74,9 @@
             <button id="openMainMenu" class="open-main-menu open-button">Open Main Menu</button>
             <button id="openSidebar" class="open-sidebar open-button">Open Sidebar</button>
         </section>
-        <!-- <section class="search" role="search">
-            <?php get_search_form(); ?>
-        </section> -->
-        <?php get_template_part('templates/searchform'); ?>
+        <section class="search" role="search">
+            <?php get_template_part('templates/searchform'); ?>
+        </section>
         <h1 class="blog-name">
             <!-- TODO: Create option in theme customizer to upload new logo -->
             <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>

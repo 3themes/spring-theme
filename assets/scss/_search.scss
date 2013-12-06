@@ -1,4 +1,5 @@
 .search {
+    position: relative;
     width: 60%;
     @include css3-calc('width', '100% - 7em');
     @include center-block();
@@ -12,10 +13,16 @@
         padding: .5em .25em;
         border: 1px solid $springLightGrey;
     }
-
-    input[type=submit] {
-        background: transparent;
-        border: 0;
-
-    }
 }
+
+    .search-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: $springWhite url(../img/search-icon.png) no-repeat 50% 45%;
+        border: 1px solid $springLightGrey;
+        border-left: 0;
+        width: 2em;
+        @include hide-text();
+    }
