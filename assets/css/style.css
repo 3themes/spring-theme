@@ -394,7 +394,7 @@ textarea,
   display: block;
   width: 100%;
   max-width: 768px;
-  padding: 0.25em;
+  padding: 0.5em;
   margin-bottom: 1.1em;
   background-color: #f4f4f2;
   border: 1px solid #92948f;
@@ -464,18 +464,18 @@ textarea[readonly] {
 
 ::-webkit-input-placeholder {
   color: #d3d5cb;
-  font-size: .875em;
-  font-style: italic; }
+  font-size: 0.875em;
+  font-style: normal; }
 
 :-moz-placeholder {
   color: #d3d5cb;
-  font-size: .875em;
-  font-style: italic; }
+  font-size: 0.875em;
+  font-style: normal; }
 
 :-ms-input-placeholder {
   color: #d3d5cb;
-  font-size: .875em;
-  font-style: italic; }
+  font-size: 0.875em;
+  font-style: normal; }
 
 /* BUTTON SIZES */
 .button-xl {

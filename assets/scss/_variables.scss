@@ -67,7 +67,9 @@ $textboxBorderWidth: 1px;
 $textboxBorderStyle: solid;
 $textboxColor: $textColor;
 $textboxPlaceholderColor: $springLightGrey;
-$textboxPadding: $gutter / 4;
+$textboxPlaceholderSize: .875em;
+$textboxPlaceholderStyle: normal; //Change to italic if you want placeholder text to be italic.
+$textboxPadding: .5em;
 
 $buttonBackground: $springGreen;
 $buttonBorderColor: darken($buttonBackground,10%);

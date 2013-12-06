@@ -430,20 +430,20 @@ textarea[readonly] {
 
 ::-webkit-input-placeholder {
 	color: $textboxPlaceholderColor;
-	font-size: .875em;
-	font-style: italic;
+	font-size: $textboxPlaceholderSize;
+	font-style: $textboxPlaceholderStyle;
 }
 
 :-moz-placeholder {
 	color: $textboxPlaceholderColor;
-	font-size: .875em;
-	font-style: italic;
+	font-size: $textboxPlaceholderSize;
+	font-style: $textboxPlaceholderStyle;
 }
 
 :-ms-input-placeholder {
     color: $textboxPlaceholderColor;
-    font-size: .875em;
-	font-style: italic;
+    font-size: $textboxPlaceholderSize;
+	font-style: $textboxPlaceholderStyle;
 }
 
 /* BUTTON SIZES */
