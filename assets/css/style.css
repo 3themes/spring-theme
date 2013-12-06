@@ -744,16 +744,20 @@ body {
   right: 0; }
 
 .blog-name {
-  height: 0;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-  padding-top: 36.1666666667%;
-  background: url(../img/logo.png) no-repeat left top;
-  background-size: 100% auto;
-  text-shadow: none;
-  text-indent: 1000%;
-  white-space: nowrap;
-  overflow: hidden; }
+  padding: 0 24px;
+  padding: 0 1.5rem; }
+  .blog-name a {
+    display: block;
+    height: 0;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    padding-top: 36.1666666667%;
+    background: url(../img/logo.png) no-repeat left top;
+    background-size: 100% auto;
+    text-shadow: none;
+    text-indent: 1000%;
+    white-space: nowrap;
+    overflow: hidden; }
 
 @media only screen and (min-width: 30.5em) {
   .blog-name {

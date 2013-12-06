@@ -54,12 +54,16 @@
         }
 
     .blog-name {
-        height: 0;
-        @include rem-px(margin-bottom, 1rem);
-        padding-top: 36.1666666667%;
-        background: url(../img/logo.png) no-repeat left top;
-        background-size: 100% auto;
-        @include hide-text();
+        @include rem-px('padding', 0, 1.5rem);
+        a {
+            display: block;
+            height: 0;
+            @include rem-px(margin-bottom, 1rem);
+            padding-top: 36.1666666667%;
+            background: url(../img/logo.png) no-repeat left top;
+            background-size: 100% auto;
+            @include hide-text();
+        }
     }
 
 @media only screen and (min-width: #{$smallBreakpoint}) {
