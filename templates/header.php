@@ -74,15 +74,9 @@
             <button id="openMainMenu" class="open-main-menu open-button">Open Main Menu</button>
             <button id="openSidebar" class="open-sidebar open-button">Open Sidebar</button>
         </section>
-<<<<<<< HEAD
         <section class="search" role="search">
             <?php get_template_part('templates/searchform'); ?>
         </section>
-=======
-
-        <?php get_template_part('templates/searchform'); ?>
-
->>>>>>> 68a69c1282cad990d37f51d52b8979b28b6a57b2
         <h1 class="blog-name">
             <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
         </h1>
