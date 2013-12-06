@@ -62,7 +62,7 @@
     <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 </head>
 <body <?php body_class(); ?>>
-<div class="wrapper">
+<div class="wrapper" role="document">
     <header class="header-main">
         <nav class="nav-quicklinks" role="navigation">
             <?php
