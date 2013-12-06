@@ -18,6 +18,13 @@
             border: 0;
             @include hide-text();
             font-size: 1em;
+
+            &:active,
+            &:focus {
+                outline: 0;
+            }
+
+
         }
 
         .open-main-menu {

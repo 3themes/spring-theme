@@ -4,6 +4,7 @@ body {
 }
 
 .wrapper {
+    background: white;
     @include multi-transition('margin-left .2s ease-out, margin-right .2s ease-out');
 }
 
@@ -12,8 +13,6 @@ body {
         width: 100%;
         margin-left: 80%;
         margin-right: -80%;
-        @include css3-calc('margin-left', '100% - 3.5em');
-        @include css3-calc('margin-right', '-100% + 3.5em');
     }
 }
 
