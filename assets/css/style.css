@@ -595,9 +595,23 @@ html,
 body {
   overflow-x: hidden; }
 
+.wrapper {
+  -webkit-transition: margin-left .2s ease-out, margin-right .2s ease-out;
+  -moz-transition: margin-left .2s ease-out, margin-right .2s ease-out;
+  -ms-transition: margin-left .2s ease-out, margin-right .2s ease-out;
+  -o-transition: margin-left .2s ease-out, margin-right .2s ease-out;
+  transition: margin-left .2s ease-out, margin-right .2s ease-out; }
+
 .open-menu .wrapper {
   width: 100%;
-  margin-left: 80%; }
+  margin-left: 80%;
+  margin-right: -80%;
+  margin-left: -moz-calc(100% - 3.5em);
+  margin-left: -webkit-calc(100% - 3.5em);
+  margin-left: calc(100% - 3.5em);
+  margin-right: -moz-calc(-100% + 3.5em);
+  margin-right: -webkit-calc(-100% + 3.5em);
+  margin-right: calc(-100% + 3.5em); }
 
 .youtube {
   position: relative;
