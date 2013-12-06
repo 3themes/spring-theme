@@ -608,6 +608,9 @@ body {
   margin-left: 80%;
   margin-right: -80%; }
 
+.content {
+  padding: 0 1.5em; }
+
 .youtube {
   position: relative;
   height: 0;
