@@ -375,7 +375,7 @@ figcaption {
 
 /* FORMS */
 label {
-  font-size: .875em;
+  font-size: 1.125em;
   color: #58595b; }
 
 input[type="text"],
@@ -393,11 +393,11 @@ textarea,
 .textbox {
   display: block;
   width: 100%;
-  max-width: 768px;
+  max-width: 30em;
   padding: 0.5em;
   margin-bottom: 1.1em;
   background-color: #f4f4f2;
-  border: 1px solid #92948f;
+  border: 1px solid #d3d5cb;
   color: #58595b;
   font-size: .875em; }
   input[type="text"]:active, input[type="text"]:focus,
@@ -425,7 +425,7 @@ textarea,
   textarea:focus,
   .textbox:active,
   .textbox:focus {
-    border-color: #84b100; }
+    outline-color: #84b100; }
 
 input[type="checkbox"],
 input[type="radio"] {

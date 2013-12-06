@@ -61,7 +61,7 @@ $linkFocus: darken($linkColor,20%);
 
 // Forms
 $textboxBackground: $springWhite;
-$textboxBorderColor: $springGrey;
+$textboxBorderColor: $springLightGrey;
 $textboxBorderColorActive: $springGreen;
 $textboxBorderWidth: 1px;
 $textboxBorderStyle: solid;
@@ -70,6 +70,11 @@ $textboxPlaceholderColor: $springLightGrey;
 $textboxPlaceholderSize: .875em;
 $textboxPlaceholderStyle: normal; //Change to italic if you want placeholder text to be italic.
 $textboxPadding: .5em;
+$textboxOutline: none;
+$textboxMaxWidth: 30em;
+
+$labelFontSize: 1.125em;
+$labelColor: $textColor;
 
 $buttonBackground: $springGreen;
 $buttonBackground2: $springLightGreen; //Uncomment if you want a gradient background on a button. Also uncomment gradient in

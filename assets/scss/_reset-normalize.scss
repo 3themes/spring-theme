@@ -357,8 +357,8 @@ figcaption {
 
 /* FORMS */
 label {
-    font-size: .875em;
-    color: $textColor;
+    font-size: $labelFontSize;
+    color: $labelColor;
 }
 
 input[type="text"],
@@ -376,7 +376,7 @@ textarea,
 .textbox {
     display: block;
     width: 100%;
-    max-width: 768px;
+    max-width: $textboxMaxWidth;
     padding: $textboxPadding;
     margin-bottom: $baselineHeight;
     background-color: $textboxBackground;
@@ -386,7 +386,7 @@ textarea,
 
     &:active,
     &:focus {
-        border-color: $textboxBorderColorActive;
+        outline-color: $textboxBorderColorActive;
     }
 }
 
