@@ -31,6 +31,7 @@ function spring_scripts() {
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('spring_scripts');
+    wp_enqueue_script('spring_app', get_template_directory_uri() . '/assets/js/spring.js','', '', true);
 }
 add_action('wp_enqueue_scripts', 'spring_scripts', 100);
 

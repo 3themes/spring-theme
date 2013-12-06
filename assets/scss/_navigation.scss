@@ -4,34 +4,51 @@
     padding: .5em 1em;
 
     a {
-        color: $springWhite;
+        color: $springLightGrey;
+        font-weight: 200;
     }
 }
 
+    .quicklinks-menu {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin: 0;
+            padding: 0 .5em;
+            list-style: none;
+        }
+    }
+
 .nav-main {
-	text-align: center;
-
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-
-	li {
-		display: inline-block;
-		list-style: none;
-
-		&:last-child {
-			border-bottom: 0;
-		}
-	}
-
-	a {
-		display: block;
-		padding: .125em .375em;
-		@include transition(color .2s);
-
-		&:hover {
-			color: darken($linkColor, 5%);
-		}
-	}
+	position: absolute;
+    right: 100%;
+    top: 0;
+    width: 80%;
 }
+
+    .navigation-main {
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+
+        a {
+            display: block;
+            padding: .125em .375em;
+            @include transition(color .2s);
+
+            &:hover {
+                color: darken($linkColor, 5%);
+            }
+        }
+    }

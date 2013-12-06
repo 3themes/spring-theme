@@ -62,11 +62,12 @@
     <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 </head>
 <body <?php body_class(); ?>>
+<div class="wrapper">
     <header class="header-main">
         <nav class="nav-quicklinks" role="navigation">
             <?php
             if (has_nav_menu('quicklink_navigation')) :
-                wp_nav_menu(array('theme_location' => 'quicklink_navigation', 'menu_class' => 'quicklink-menu'));
+                wp_nav_menu(array('theme_location' => 'quicklink_navigation', 'menu_class' => 'quicklinks-menu'));
             endif;
             ?>
         </nav>

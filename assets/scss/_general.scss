@@ -1,7 +1,13 @@
-.wrapper {
-    max-width: 64.5em;
-    margin: 0 auto;
-    padding: 1em;
+html,
+body {
+    overflow-x: hidden;
+}
+
+.open-menu {
+    .wrapper {
+        width: 100%;
+        margin-left: 80%;
+    }
 }
 
 .youtube {
