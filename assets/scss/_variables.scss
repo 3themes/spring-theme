@@ -72,11 +72,18 @@ $textboxPlaceholderStyle: normal; //Change to italic if you want placeholder tex
 $textboxPadding: .5em;
 
 $buttonBackground: $springGreen;
-$buttonBorderColor: darken($buttonBackground,10%);
+$buttonBackground2: $springLightGreen; //Uncomment if you want a gradient background on a button. Also uncomment gradient in
+$buttonBorderColor: darken($buttonBackground,5%);
 $buttonBorderWidth: 1px;
 $buttonBorderStyle: solid;
 $buttonColor: $springWhite;
-$buttonPadding: .25em .75em;
+$buttonFont: $baseFont;
+$buttonFontSize: 1em;
+$buttonFontWeight: 200;
+$buttonPadding: .5em 2em;
+
+$buttonAltBackground: $springDarkGrey;
+$buttonAltBackground2: $springLightGrey;
 
 // Tables
 $tableBackground: transparent;

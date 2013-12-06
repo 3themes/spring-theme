@@ -406,12 +406,20 @@ input[type="reset"] {
 	display: inline-block;
     width: auto;
     height: auto;
-    padding: .25em .5em;
-    background-color: $buttonBackground;
-    border: $buttonBorderWidth $buttonBorderStyle $buttonBorderColor;
+    padding: $buttonPadding;
+    //background-color: $buttonBackground;
+    @include vertical($buttonBackground, $buttonBackground2);
+    border: 0;
+    border-bottom: $buttonBorderWidth $buttonBorderStyle $buttonBorderColor;
     color: $buttonColor;
-    font-size: .875em;
+    font-family: $buttonFont;
+    font-size: $buttonFontSize;
+    font-weight: $buttonFontWeight;
     cursor: pointer;
+
+    &.alt {
+        @include vertical($buttonAltBackground, $buttonAltBackground2);
+    }
 }
 
 input[type="hidden"] {
