@@ -33,10 +33,8 @@ grunt.initConfig({
     },
 });
 
-// Load the above plugins in order of configuration
-grunt.loadNpmTasks('grunt-contrib-sass');
-grunt.loadNpmTasks('grunt-contrib-cssmin');
-grunt.loadNpmTasks('grunt-contrib-uglify');
+// Load all grunt-* tasks
+require('load-grunt-tasks')(grunt);
 
 // Default tasks
 grunt.registerTask('default', ['uglify', 'sass', 'cssmin']);
