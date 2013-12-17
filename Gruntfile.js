@@ -1,37 +1,44 @@
 module.exports = function(grunt) {
 
-  // Project configuration
-  grunt.initConfig({
+// Project configuration
+grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    
-    uglify: {
-      build: {
-        src: 'assets/js/spring.js',
-        dest: 'assets/js/build/spring.min.js'
-      }
-    },
-    
+
     sass: {
-      dist: {
-        options: {
-          // Generates expanded style.css in theme root
-          // cssmin will minify later
-          style: 'expanded'
-        },
-        files: {
-          'style.css': 'assets/scss/style.scss'
+        dist: {
+            options: {
+    // Generates expanded style.css in theme root
+    // cssmin will minify later
+                style: 'expanded'
+            },
+            files: {
+                'style.css': 'assets/scss/style.scss'
+            }
         }
-      }
-    }
-  });
+    },
 
-  // Load the plugin that provides the "uglify" task
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+    cssmin: {
+        combine: {
+            files: {
+                'assets/css/build/style.min.css': 'style.css'
+            }
+        }
+    },
 
-  // Load the plugin that provides the "sass" task
-  grunt.loadNpmTasks('grunt-contrib-sass');
+    uglify: {
+        build: {
+            src: 'assets/js/spring.js',
+            dest: 'assets/js/build/spring.min.js'
+        }
+    },
+});
 
-  // Default tasks
-  grunt.registerTask('default', ['uglify', 'sass']);
+// Load the above plugins in order of configuration
+grunt.loadNpmTasks('grunt-contrib-sass');
+grunt.loadNpmTasks('grunt-contrib-cssmin');
+grunt.loadNpmTasks('grunt-contrib-uglify');
+
+// Default tasks
+grunt.registerTask('default', ['uglify', 'sass', 'cssmin']);
 
 };
