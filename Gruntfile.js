@@ -25,6 +25,10 @@ grunt.initConfig({
         }
     },
 
+    jshint: {
+        beforeconcat: ['assets/js/*.js']
+    },
+
     uglify: {
         build: {
             src: 'assets/js/spring.js',
