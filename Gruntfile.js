@@ -29,10 +29,20 @@ grunt.initConfig({
         beforeconcat: ['assets/js/*.js']
     },
 
+    concat: {
+      dist: {
+        src: [
+          'assets/js/lib/*.js',
+          'assets/js/spring.js'
+        ],
+        dest: 'assets/js/build/production.js'
+      }
+    },
+
     uglify: {
         build: {
-            src: 'assets/js/spring.js',
-            dest: 'assets/js/build/spring.min.js'
+            src: 'assets/js/build/production.js',
+            dest: 'assets/js/build/production.min.js'
         }
     },
 });
@@ -41,6 +51,8 @@ grunt.initConfig({
 require('load-grunt-tasks')(grunt);
 
 // Default tasks
-grunt.registerTask('default', ['uglify', 'sass', 'cssmin']);
+grunt.registerTask('default', ['sass', 'cssmin', 'concat', 'uglify']);
 
+// Tasks for development
+// grunt.registerTask('dev', ['connect', 'watch']);
 };
