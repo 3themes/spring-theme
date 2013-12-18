@@ -7,12 +7,12 @@ grunt.initConfig({
     sass: {
         dist: {
             options: {
-    // Generates expanded style.css in theme root
-    // cssmin will minify later
+            // Generates expanded style.css in theme root
+            // cssmin will minify later
                 style: 'expanded'
             },
             files: {
-                'style.css': 'assets/scss/style.scss'
+                'style.css': 'assets/css/scss/style.scss'
             }
         }
     },
@@ -45,13 +45,51 @@ grunt.initConfig({
             dest: 'assets/js/build/production.min.js'
         }
     },
+
+    imagemin: {
+        dynamic: {
+            files: [{
+                expand: true,
+                cwd: 'assets/img/',
+                src: ['../../*.{png,jpg,gif}', '**/*.{png,jpg,gif}'],
+                dest: 'assets/images/'
+            }]
+        }
+    },
+
+    watch: {
+        options: {
+            livereload: true,
+        },
+        scripts: {
+            files: ['assets/js/*.js', 'assets/js/lib/*.js'],
+            tasks: ['jshint', 'concat', 'uglify'],
+            options: {
+                spawn: false,
+            }
+        },
+        css: {
+            files: ['assets/css/scss/*.scss'],
+            tasks: ['sass', 'cssmin'],
+            options: {
+                spawn: false,
+            }
+        },
+        images: {
+            files: ['assets/images/**/*.{png,jpg,gif}', 'assets/images/*.{png,jpg,gif}', '*.{png,jpg,gif}'],
+            tasks: ['imagemin'],
+            options: {
+                spawn: false,
+            }
+        }
+    }
 });
 
-// Load all grunt-* tasks
+// Load all grunt-* tasks (load-grunt-tasks plugin)
 require('load-grunt-tasks')(grunt);
 
-// Default tasks
-grunt.registerTask('default', ['sass', 'cssmin', 'concat', 'uglify']);
+// Default task is to rebuild
+grunt.registerTask('default', ['sass', 'cssmin', 'concat', 'uglify', 'imagemin']);
 
 // Tasks for development
 // grunt.registerTask('dev', ['connect', 'watch']);

@@ -11,7 +11,7 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function spring_scripts() {
-  wp_enqueue_style('spring_main', get_template_directory_uri() . '/assets/css/style.css', false);
+  wp_enqueue_style('spring_main', get_template_directory_uri() . '/assets/css/build/style.min.css', false);
 
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:
