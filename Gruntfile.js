@@ -50,16 +50,16 @@ grunt.initConfig({
         }
     },
 
-    imagemin: {
-        dynamic: {
-            files: [{
-                expand: true,
-                cwd: 'assets/img/',
-                src: ['../../*.{png,jpg,gif}', '**/*.{png,jpg,gif}'],
-                dest: 'assets/images/'
-            }]
-        }
-    },
+    // imagemin: {
+    //     dynamic: {
+    //         files: [{
+    //             expand: true,
+    //             cwd: 'assets/img/',
+    //             src: ['../../*.{png,jpg,gif}', '**/*.{png,jpg,gif}'],
+    //             dest: 'assets/images/'
+    //         }]
+    //     }
+    // },
 
     watch: {
         options: {
@@ -90,8 +90,8 @@ grunt.initConfig({
 });
 
 // Default task is to rebuild
-grunt.registerTask('default', ['sass', 'cssmin', 'concat', 'uglify', 'imagemin']);
+grunt.registerTask('default', ['sass', 'concat']);
 
 // Tasks for development
-grunt.registerTask('build', ['cssmin', 'uglify']);
+grunt.registerTask('build', ['sass', 'cssmin', 'concat', 'uglify']);
 };
