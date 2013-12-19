@@ -13,5 +13,8 @@
 
 <?php get_template_part('templates/footer'); ?>
 
+<!-- below script is for grunt livereload -->
+<script src="http://localhost:35729/livereload.js"></script>
+
 </body>
 </html>
