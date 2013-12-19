@@ -916,7 +916,7 @@ body {
   margin-bottom: 16px;
   margin-bottom: 1rem;
   padding-top: 36.1666666667%;
-  background: url(../../img/logo.png) no-repeat left top;
+  background: url(assets/img/logo.png) no-repeat left top;
   background-size: 100% auto;
   text-shadow: none;
   text-indent: 1000%;
@@ -1125,7 +1125,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  background: #f4f4f2 url(../../img/search-icon.png) no-repeat 50% 45%;
+  background: #f4f4f2 url(assets/img/search-icon.png) no-repeat 50% 45%;
   border: 1px solid #d3d5cb;
   border-left: 0;
   width: 2em;
