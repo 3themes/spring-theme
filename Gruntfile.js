@@ -2,6 +2,7 @@ module.exports = function(grunt) {
 
 // Load all grunt-* tasks (load-grunt-tasks plugin)
 require('load-grunt-tasks')(grunt);
+
 require('time-grunt')(grunt);
 
 // Project configuration
@@ -34,13 +35,13 @@ grunt.initConfig({
     },
 
     concat: {
-      dist: {
-        src: [
-          'assets/js/lib/*.js',
-          'assets/js/spring.js'
-        ],
-        dest: 'assets/js/build/production.js'
-      }
+        dist: {
+            src: [
+            'assets/js/lib/*.js',
+            'assets/js/spring.js'
+            ],
+            dest: 'assets/js/build/production.js'
+        }
     },
 
     uglify: {
