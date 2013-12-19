@@ -12,8 +12,8 @@ grunt.initConfig({
     sass: {
         dist: {
             options: {
-            // Generates expanded style.css in theme root
-            // cssmin will minify later
+                // Generates expanded style.css in theme root
+                // cssmin will minify later
                 style: 'expanded'
             },
             files: {
@@ -51,6 +51,7 @@ grunt.initConfig({
         }
     },
 
+    // TODO: Let's discuss how we want to implement this
     // imagemin: {
     //     dynamic: {
     //         files: [{
@@ -68,21 +69,14 @@ grunt.initConfig({
         },
         scripts: {
             files: ['assets/js/*.js', 'assets/js/lib/*.js'],
-            tasks: ['jshint', 'concat', 'uglify'],
+            tasks: ['jshint', 'concat'],
             options: {
                 spawn: false,
             }
         },
         css: {
             files: ['assets/css/scss/*.scss'],
-            tasks: ['sass', 'cssmin'],
-            options: {
-                spawn: false,
-            }
-        },
-        images: {
-            files: ['assets/images/**/*.{png,jpg,gif}', 'assets/images/*.{png,jpg,gif}', '*.{png,jpg,gif}'],
-            tasks: ['imagemin'],
+            tasks: ['sass'],
             options: {
                 spawn: false,
             }
