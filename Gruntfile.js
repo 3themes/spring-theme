@@ -1,5 +1,9 @@
 module.exports = function(grunt) {
 
+// Load all grunt-* tasks (load-grunt-tasks plugin)
+require('load-grunt-tasks')(grunt);
+require('time-grunt')(grunt);
+
 // Project configuration
 grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -85,12 +89,9 @@ grunt.initConfig({
     }
 });
 
-// Load all grunt-* tasks (load-grunt-tasks plugin)
-require('load-grunt-tasks')(grunt);
-
 // Default task is to rebuild
 grunt.registerTask('default', ['sass', 'cssmin', 'concat', 'uglify', 'imagemin']);
 
 // Tasks for development
-// grunt.registerTask('dev', ['connect', 'watch']);
+grunt.registerTask('build', ['cssmin', 'uglify']);
 };
