@@ -40,14 +40,14 @@ grunt.initConfig({
             'assets/js/lib/*.js',
             'assets/js/spring.js'
             ],
-            dest: 'assets/js/build/production.js'
+            dest: 'assets/js/build/spring-production.js'
         }
     },
 
     uglify: {
         build: {
-            src: 'assets/js/build/production.js',
-            dest: 'assets/js/build/production.min.js'
+            src: 'assets/js/build/spring-production.js',
+            dest: 'assets/js/build/spring-production.min.js'
         }
     },
 
