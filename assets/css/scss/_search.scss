@@ -8,17 +8,16 @@
     label {
         display: none;
     }
-
-    input[type="text"],
-    input[type="search"] {
-        @include rem-px('max-width', 30rem);
-        margin: 0;
-        padding: .5em .25em;
-        border: 1px solid $springLightGrey;
-    }
 }
 
-    .search-button {
+    .textbox.search--textbox {
+        @include rem-px('max-width', 30rem);
+        margin: 0;
+        padding: .5em 2.25em .5em .25em;
+        border: 1px solid $springLightGrey;
+    }
+
+    .search--button {
         position: absolute;
         right: 0;
         top: 0;
@@ -35,7 +34,7 @@
 
 
 @media only screen and (min-width: #{$midBreakpoint}) {
-    .search {
+    .header-main .search {
         clear: both;
         float: right;
         width: 15em;
