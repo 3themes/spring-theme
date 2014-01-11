@@ -197,12 +197,19 @@ ol {
     }
 
 blockquote {
-    margin: $blockquoteMargin;
+    @include rem-px('margin-bottom', $blockquoteMarginBottom);
     padding-left: $blockquotePaddingLeft;
     border-left: $blockquoteBorderWidth $blockquoteBorderStyle $blockquoteBorderColor;
+    color: $blockquoteColor;
     font-family: $blockquoteFontFamily;
     @include rem-px('font-size', $blockquoteFontSize);
     font-style: $blockquoteFontStyle;
+
+    * {
+        font-family: $blockquoteFontFamily;
+        @include rem-px('font-size', $blockquoteFontSize);
+        font-style: $blockquoteFontStyle;
+    }
 }
 
 dl,

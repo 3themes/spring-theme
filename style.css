@@ -304,9 +304,17 @@ li {
 }
 
 blockquote {
-  margin: 0 0 1em 0;
+  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
   padding-left: 0;
   border-left: 0 solid #d3d5cb;
+  color: #92948f;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+blockquote * {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
@@ -969,15 +977,26 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (min-width: 30.5em) {
+@media only screen and (min-width: 48.5em) {
+  .header-main {
+    *zoom: 1;
+  }
+  .header-main:before, .header-main:after {
+    display: table;
+    content: "";
+  }
+  .header-main:after {
+    clear: both;
+  }
+
+  .open-button-wrapper {
+    display: none;
+  }
+
   .blog-name {
-    height: 160px;
-    height: 10rem;
-    width: 432px;
-    width: 27rem;
-    padding-top: 0;
-    margin-left: auto;
-    margin-right: auto;
+    float: left;
+    width: 12em;
+    margin-top: -.75em;
   }
 }
 .nav-quicklinks {
@@ -1065,6 +1084,28 @@ body {
   float: right;
 }
 
+@media only screen and (min-width: 48.5em) {
+  .nav-main {
+    float: right;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    width: auto;
+    text-transform: uppercase;
+  }
+
+  .menu-item {
+    display: inline-block;
+  }
+  .menu-item > a {
+    padding: .25em .5em;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+}
 .post {
   *zoom: 1;
   margin-bottom: 2em;
@@ -1214,6 +1255,7 @@ body {
 .search input[type="search"] {
   max-width: 480px;
   max-width: 30rem;
+  margin: 0;
   padding: .5em .25em;
   border: 1px solid #d3d5cb;
 }
@@ -1234,6 +1276,14 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (min-width: 48.5em) {
+  .search {
+    clear: both;
+    float: right;
+    width: 15em;
+    margin-right: 1.375em;
+  }
+}
 code {
   margin: 1em 0;
 }

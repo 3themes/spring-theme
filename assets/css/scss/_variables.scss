@@ -109,11 +109,12 @@ $tableBorderColor: $springLightGrey;
 $tableHover: transparent;
 
 // Blockquotes
-$blockquoteMargin: 0 0 1em 0;
+$blockquoteMarginBottom: .875rem;
 $blockquotePaddingLeft: 0;
 $blockquoteBorderWidth: 0;
 $blockquoteBorderStyle: solid;
 $blockquoteBorderColor: $springLightGrey;
+$blockquoteColor: $springGrey;
 $blockquoteFontFamily: $headingFont;
 $blockquoteFontSize: 1.25rem;
 $blockquoteFontStyle: italic;

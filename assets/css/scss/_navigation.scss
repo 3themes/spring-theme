@@ -77,3 +77,33 @@
         .pager--next {
             float: right;
         }
+
+
+
+
+@media only screen and (min-width: #{$midBreakpoint}) {
+    .nav-main {
+        float: right;
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        width: auto;
+        text-transform: uppercase;
+    }
+
+        .main-menu {
+        }
+
+            .menu-item {
+                display: inline-block;
+
+                & > a {
+                    padding: .25em .5em;
+                }
+            }
+
+                .sub-menu {
+                    display: none;
+                }
+}
