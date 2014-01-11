@@ -24,6 +24,7 @@ $textColor: $springDarkGrey;
 $columnMargin: .5em;
 $gutter: 1em;
 $warningColor: red;
+$textFontSize: .875rem;
 
 // Typography
 $baseFont: 'Source Sans Pro', sans-serif;
@@ -53,7 +54,7 @@ $h5Size: 1em;
 $h5FontWeight: 300;
 
 $h6Color: $springGrey;
-$h6Size: 1em;
+$h6Size: .875em;
 $h6FontWeight: 200;
 
 $headingTextShadow: none;
@@ -61,9 +62,9 @@ $codeFont: 'Source Code Pro', sans-serif;
 
 // Links
 $linkColor: $springGreen;
-$linkHover: darken($linkColor,10%);
-$linkVisited: darken($linkColor,15%);
-$linkFocus: darken($linkColor,20%);
+$linkHover: darken($linkColor,5%);
+$linkVisited: darken($linkColor,10%);
+$linkFocus: darken($linkColor,15%);
 
 // Forms
 $textboxBackground: $springWhite;
@@ -106,6 +107,16 @@ $tableBorderWidth: 1px;
 $tableBorderStyle: solid;
 $tableBorderColor: $springLightGrey;
 $tableHover: transparent;
+
+// Blockquotes
+$blockquoteMargin: 0 0 1em 0;
+$blockquotePaddingLeft: 0;
+$blockquoteBorderWidth: 0;
+$blockquoteBorderStyle: solid;
+$blockquoteBorderColor: $springLightGrey;
+$blockquoteFontFamily: $headingFont;
+$blockquoteFontSize: 1.25rem;
+$blockquoteFontStyle: italic;
 
 // Breakpoints
 $smallBreakpoint: 30.5em;
