@@ -1,36 +1,44 @@
-.article-title {
-	margin-bottom: 0;
-
-	a {
-		&:hover {
-			text-decoration: none;
-		}
-	}
+.post {
+    @include clearfix();
+    margin-bottom: 2em;
 }
 
-.article-byline {
-	margin: .25em 0 .5em 0;
-	font-size: .675em;
-	font-style: italic;
+    .post--title {
+        margin-bottom: 0;
 
-	a {
-		font-style: italic;
-	}
-}
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
 
-.article-footer {
-	padding: .5em;
-	background: $lighterGrey;
-	font-size: .675em;
+    .post--thumbnail {
+        width: 100%;
+        margin:1em 0;
+    }
 
-	a {
-		color: darken($linkColor, 20%);
-	}
-}
+    .post--byline {
+        @include rem-px('margin', 0, 0, .875rem, 0);
+        font-size: .75em;
+        font-style: italic;
 
-.article-hr {
-	width: 50%;
-	margin: 3em auto;
-}
+        a {
+            font-style: italic;
+        }
+    }
+
+    .post--metadata {
+        font-size: .875em;
+    }
+
+        .post--metadata--title {
+            font-weight: bold;
+        }
+
+    .post--hr {
+        width: 50%;
+        margin: 3em auto;
+    }
 
 //TODO: Sticky post styles
