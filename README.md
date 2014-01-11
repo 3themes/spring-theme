@@ -11,3 +11,7 @@ A vanilla WordPress theme that will be the foundation for all other 3themes them
   2. git submodule update --init
 4. To ensure you have the very latest Sassquatch, or to update an existing repo when we update Sassquatch, type the following commands into terminal:
   1. git submodule foreach git pull origin master   #This pulls the latest of every submodule
+
+
+##Legacy Browser Support##
+There has been no effort to ensure any browser other than the latest two versions of every browser works. Basic functionality support is planned for IE8 and 9, but no timetable is set.
