@@ -1,40 +1,44 @@
-.comments--list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    ul,
-    ol {
-        @include rem-px('margin-left', 5rem);
-        padding: 0;
-        list-style: none;
-    }
+.comments {
+    margin-top: 1em;
 }
 
-    .comment {
-        @include clearfix();
+    .comments--list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
 
-        .avatar {
-            float: left;
-            @include rem-px('width', 4rem);
-            @include rem-px('height', 4rem);
-            @include rem-px('margin-right', 1rem);
+        ul,
+        ol {
+            @include rem-px('margin-left', 5rem);
+            padding: 0;
+            list-style: none;
         }
     }
 
-        .comment--body {
-            float: right;
-            width: 60%;
-            @include css3-calc('width', '100% - 5rem');
-            margin-bottom: 2.5em;
+        .comment {
+            @include clearfix();
+
+            .avatar {
+                float: left;
+                @include rem-px('width', 4rem);
+                @include rem-px('height', 4rem);
+                @include rem-px('margin-right', 1rem);
+            }
         }
 
-            .comment--name a {
-                @include rem-px('font-size', 1rem);
-                font-weight: bold;
+            .comment--body {
+                float: right;
+                width: 60%;
+                @include css3-calc('width', '100% - 5rem');
+                margin-bottom: 2.5em;
             }
 
-            .comment--byline {
-                @include rem-px('margin', .5rem, 0);
-            }
+                .comment--name a {
+                    @include rem-px('font-size', 1rem);
+                    font-weight: bold;
+                }
+
+                .comment--byline {
+                    @include rem-px('margin', .5rem, 0);
+                }
 

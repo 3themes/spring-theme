@@ -1184,6 +1184,10 @@ body {
   margin: 3em auto;
 }
 
+.comments {
+  margin-top: 1em;
+}
+
 .comments--list {
   margin: 0;
   padding: 0;
