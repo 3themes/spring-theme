@@ -1195,14 +1195,17 @@ body {
 }
 .comments--list ul,
 .comments--list ol {
-  margin-left: 80px;
-  margin-left: 5rem;
+  margin-left: 0;
+  margin-bottom: 0;
   padding: 0;
+  padding-left: 80px;
+  padding-left: 5rem;
   list-style: none;
 }
 
 .comment {
   *zoom: 1;
+  clear: both;
 }
 .comment:before, .comment:after {
   display: table;
