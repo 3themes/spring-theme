@@ -33,12 +33,20 @@
                 margin-bottom: 2.5em;
             }
 
-                .comment--name a {
+                .comment--name {
                     @include rem-px('font-size', 1rem);
                     font-weight: bold;
+                    
+                    a {
+                        font-weight: bold;
+                    }
                 }
 
                 .comment--byline {
-                    @include rem-px('margin', .5rem, 0);
+                    @include rem-px('margin', 0, 0, .375rem, 0);
+
+                    a {
+                        font-style: italic;
+                    }
                 }
 
