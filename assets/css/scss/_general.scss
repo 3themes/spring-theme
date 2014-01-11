@@ -135,7 +135,8 @@ body {
         @include flexbox-align-items(flex-start);
     }
 
-        .content-main {
+
+        .content--body {
             width: 64.666666667%;
         }
 
@@ -147,7 +148,7 @@ body {
             @include grid-row();
         }
 
-        .content-main {
+        .content--body {
             float: left;
             padding-right: 1em;
             @include grid-column(8, 100%, 12);

@@ -877,17 +877,23 @@ body {
   .content {
     display: -ms-flexbox;
     -ms-box-orient: horizontal;
+    display: -moz-box;
+    display: -webkit-box;
     display: -webkit-flex;
     display: flex;
-    -ms-box-pack: space-between;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    -ms-flex-align: flex-start;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
     -webkit-align-items: flex-start;
     align-items: flex-start;
   }
 
-  .content-main {
+  .content--body {
     width: 64.666666667%;
   }
 
@@ -902,7 +908,7 @@ body {
   .no-flexbox .content:after {
     clear: both;
   }
-  .no-flexbox .content-main {
+  .no-flexbox .content--body {
     float: left;
     padding-right: 1em;
     width: 66.66667%;
@@ -1231,27 +1237,20 @@ body {
   margin: 0.5rem 0;
 }
 
-.sidebar-main {
+.content--sidebar {
   position: absolute;
   left: 100%;
   top: 0;
   width: 80%;
   padding: 5%;
 }
-.sidebar-main h1 {
-  font-size: 1.375em;
-}
-.sidebar-main hr {
-  width: 60%;
-  margin: 2em auto;
-  background-color: #bfbfbf;
-}
-.sidebar-main hr:last-child {
-  display: none;
+
+.widget {
+  margin-bottom: 1.5em;
 }
 
 @media only screen and (min-width: 48.5em) {
-  .sidebar-main {
+  .content--sidebar {
     position: relative;
     left: auto;
     top: auto;
@@ -1261,53 +1260,23 @@ body {
     border: 1px solid #bfbfbf;
     *zoom: 1;
   }
-  .sidebar-main:before, .sidebar-main:after {
+  .content--sidebar:before, .content--sidebar:after {
     display: table;
     content: "";
   }
-  .sidebar-main:after {
+  .content--sidebar:after {
     clear: both;
-  }
-  .sidebar-main article {
-    float: left;
-    width: 50%;
-    margin: 0;
-    padding-right: 5%;
-    border-right: 1px solid #bfbfbf;
-  }
-  .sidebar-main article:nth-child(2n+3) {
-    margin: 0;
-    padding-left: 5%;
-    border-right: 0;
-  }
-  .sidebar-main hr {
-    display: none;
   }
 }
 @media only screen and (min-width: 64em) {
-  .sidebar-main {
+  .content--sidebar {
     width: 31.33333333333%;
     padding: 0;
     border: 0;
     margin-top: 0;
   }
-  .sidebar-main article {
-    float: none;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border-right: 0;
-  }
-  .sidebar-main article:nth-child(2n+3) {
-    margin: 0;
-    padding: 0;
-  }
-  .sidebar-main hr {
-    display: block;
-    margin: 1em auto;
-  }
 
-  .no-flexbox .sidebar-main {
+  .no-flexbox .content--sidebar {
     float: right;
     width: 33.33333%;
   }
