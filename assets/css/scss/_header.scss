@@ -14,9 +14,11 @@
             top: 0;
             width: 2em;
             height: 2em;
+            padding: .375em;
             background: $springLightGrey;
             border: 0;
-            @include hide-text();
+            @include rounded(0);
+            overflow: hidden;
             font-size: 1em;
 
             &:active,
@@ -24,20 +26,24 @@
                 outline: 0;
             }
 
-
+            span {
+                position: absolute;
+                display: inline-block;
+                left: 100%;
+            }
         }
 
         .open-main-menu {
             left: 0;
 
-            /*&:before {
+            &:before {
                 content: ' ';
                 display: block;
-                height: .25em;
+                height: 11px;
                 width: 100%;
-                border-top: 6px solid $springWhite;
-                border-bottom: 6px solid $springWhite;
-                margin-bottom: 4px;
+                border-top: 4px solid white;
+                border-bottom: 4px solid white;
+                margin-bottom: 3px;
             }
 
             &:after {
@@ -45,12 +51,22 @@
                 display: block;
                 height: 0;
                 width: 100%;
-                border-top: 6px solid $springWhite;
-            }*/
+                border-top: 4px solid white;
+            }
         }
 
         .open-sidebar {
-           right: 0;
+            right: 0;
+
+
+            &:before {
+                content: ' ';
+                display: block;
+                height: 100%;
+                border-left: 11px solid white;
+                width: 21px;
+                border-right: 6px solid white;
+            }
         }
 
     .blog-name {

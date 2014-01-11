@@ -1,78 +1,88 @@
 .sidebar-main {
-  border: 1px solid $lightGrey;
-  padding: 5%;
-  font-size: .875em;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 80%;
+    padding: 5%;
+    font-size: .875em;
 
-  h1 {
-    font-size: 1.375em;
-  }
-
-  article {
-
-  }
-
-  hr {
-    width: 60%;
-    margin: 2em auto;
-    background-color: $lightGrey;
-
-    &:last-child {
-      display: none;
+    h1 {
+        font-size: 1.375em;
     }
-  }
-}
-
-@media only screen and (min-width: #{$midBreakpoint}) {  //approximate min-width: 768px
-  .sidebar-main {
-    margin-top: 2.5%;
-    padding: 2.5%;
-    @include clearfix();
 
     article {
-      float: left;
-      width: 50%;
-      margin: 0;
-      padding-right: 5%;
-      border-right: 1px solid $lightGrey;
 
-      &:nth-child(2n+3) {
-        margin: 0;
-        padding-left: 5%;
-        border-right: 0;
-      }
     }
 
     hr {
-      display: none;
+        width: 60%;
+        margin: 2em auto;
+        background-color: $lightGrey;
+
+        &:last-child {
+            display: none;
+        }
     }
-  }
 }
 
-@media only screen and (min-width: #{$largeBreakpoint}) {  //approximate min-width: 992px
-  .sidebar-main {
-    float: right;
-    @include grid-column(4, 100%, 12);
-    padding: 0 0 1em 0;
-    border: 0;
-    margin-top: 0;
+@media only screen and (min-width: #{$midBreakpoint}) {
+    //approximate min-width: 768px
+    .sidebar-main {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        margin-top: 2.5%;
+        padding: 2.5%;
+        border: 1px solid $lightGrey;
+        @include clearfix();
 
-    article {
-      float: none;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      border-right: 0;
+        article {
+            float: left;
+            width: 50%;
+            margin: 0;
+            padding-right: 5%;
+            border-right: 1px solid $lightGrey;
 
-      &:nth-child(2n+3) {
-        margin: 0;
-        padding: 0;
-      }
+            &:nth-child(2n+3) {
+                margin: 0;
+                padding-left: 5%;
+                border-right: 0;
+            }
+        }
+
+        hr {
+            display: none;
+        }
     }
+}
 
-    hr {
-      display: block;
-      margin: 1em auto;
+@media only screen and (min-width: #{$largeBreakpoint}) {
+    //approximate min-width: 992px
+    .sidebar-main {
+        float: right;
+        @include grid-column(4, 100%, 12);
+        padding: 0 0 1em 0;
+        border: 0;
+        margin-top: 0;
 
+        article {
+            float: none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border-right: 0;
+
+            &:nth-child(2n+3) {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        hr {
+            display: block;
+            margin: 1em auto;
+
+        }
     }
-  }
 }

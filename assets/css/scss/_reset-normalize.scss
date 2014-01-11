@@ -420,6 +420,11 @@ input[type="reset"] {
     &.alt {
         @include vertical($buttonAltBackground, $buttonAltBackground2);
     }
+
+    &:active,
+    &:focus {
+        outline-color: $buttonOutlineColor;
+    }
 }
 
 input[type="hidden"] {

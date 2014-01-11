@@ -72,8 +72,8 @@
             ?>
         </nav>
         <section class="open-button-wrapper">
-            <button id="openMainMenu" class="open-main-menu open-button">Open Main Menu</button>
-            <button id="openSidebar" class="open-sidebar open-button">Open Sidebar</button>
+            <button id="openMainMenu" class="open-main-menu open-button"><span>Open Main Menu</span></button>
+            <button id="openSidebar" class="open-sidebar open-button"><span>Open Sidebar</span></button>
         </section>
         <?php get_template_part('templates/searchform'); ?>
         <h1 class="blog-name">

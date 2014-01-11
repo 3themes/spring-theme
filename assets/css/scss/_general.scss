@@ -4,15 +4,23 @@ body {
 }
 
 .wrapper {
+    position: relative;
     background: white;
-    @include multi-transition('margin-left .2s ease-out, margin-right .2s ease-out');
+    @include multi-transition('margin-left .2s ease-out, margin-right .2s ease-out, left .2s ease-out');
 }
 
-.open-menu {
+.open-the-menu {
     .wrapper {
         width: 100%;
         margin-left: 80%;
         margin-right: -80%;
+    }
+}
+
+.open-the-sidebar {
+    .wrapper {
+        margin-left: -80%;
+        margin-right: 80%;
     }
 }
 

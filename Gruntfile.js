@@ -71,14 +71,14 @@ grunt.initConfig({
             files: ['assets/js/*.js', 'assets/js/lib/*.js'],
             tasks: ['jshint', 'concat'],
             options: {
-                spawn: false,
+                spawn: false
             }
         },
         css: {
             files: ['assets/css/scss/*.scss'],
             tasks: ['sass'],
             options: {
-                spawn: false,
+                spawn: false
             }
         }
     }
