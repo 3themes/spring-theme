@@ -67,7 +67,7 @@
             <input type="url" placeholder="Your homepage..." class="textbox" name="url" id="commentsUrl" value="<?php echo esc_attr($comment_author_url); ?>" size="22">
           </div>
         <?php endif; ?>
-        <div class="comments--form-row form-row>
+        <div class="comments--form-row form-row">
           <label for="commentsComment"><?php _e('Comment', 'spring'); ?></label>
           <textarea name="comment" placeholder="The text of your comment..." id="commentsComment" class="form-control" rows="5" aria-required="true"></textarea>
         </div>

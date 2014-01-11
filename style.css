@@ -1150,6 +1150,59 @@ body {
   margin: 3em auto;
 }
 
+.comments--list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.comments--list ul,
+.comments--list ol {
+  margin-left: 80px;
+  margin-left: 5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.comment {
+  *zoom: 1;
+}
+.comment:before, .comment:after {
+  display: table;
+  content: "";
+}
+.comment:after {
+  clear: both;
+}
+.comment .avatar {
+  float: left;
+  width: 64px;
+  width: 4rem;
+  height: 64px;
+  height: 4rem;
+  margin-right: 16px;
+  margin-right: 1rem;
+}
+
+.comment--body {
+  float: right;
+  width: 60%;
+  width: -moz-calc(100% - 5rem);
+  width: -webkit-calc(100% - 5rem);
+  width: calc(100% - 5rem);
+  margin-bottom: 2.5em;
+}
+
+.comment--name a {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.comment--byline {
+  margin: 8px 0;
+  margin: 0.5rem 0;
+}
+
 .sidebar-main {
   position: absolute;
   left: 100%;

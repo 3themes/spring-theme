@@ -1,14 +1,23 @@
 <?php echo get_avatar($comment, $size = '64'); ?>
-<div class="media-body">
-  <h4 class="media-heading"><?php echo get_comment_author_link(); ?></h4>
-  <time datetime="<?php echo comment_date('c'); ?>"><a href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)); ?>"><?php printf(__('%1$s', 'spring'), get_comment_date(),  get_comment_time()); ?></a></time>
-  <?php edit_comment_link(__('(Edit)', 'spring'), '', ''); ?>
+<div class="comment--body">
+    <header class="comment--name">
+        <?php echo get_comment_author_link(); ?>
+    </header>
+    <section class="comment--byline">
+        <time datetime="<?php echo comment_date('c'); ?>"><a href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)); ?>"><?php printf(__('%1$s', 'spring'), get_comment_date(),  get_comment_time()); ?></a></time>
+    </section>
+    <nav class="comment--edit">
+        <?php edit_comment_link(__('(Edit)', 'spring'), '', ''); ?>
+    </nav>
 
-  <?php if ($comment->comment_approved == '0') : ?>
-    <div class="alert alert-info">
-      <?php _e('Your comment is awaiting moderation.', 'spring'); ?>
-    </div>
-  <?php endif; ?>
+    <?php if ($comment->comment_approved == '0') : ?>
+        <section class="comment--awaiting-moderation alert alert-info">
+            <?php _e('Your comment is awaiting moderation.', 'spring'); ?>
+        </section>
+    <?php endif; ?>
 
-  <?php comment_text(); ?>
-  <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
+    <main class="comment--text">
+        <?php comment_text(); ?>
+        <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
+    </main>
+</div>
