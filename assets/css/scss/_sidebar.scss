@@ -83,4 +83,11 @@
 
         }
     }
+
+    .no-flexbox {
+        .sidebar-main {
+            float: right;
+            @include grid-column(4, 100%, 12);
+        }
+    }
 }

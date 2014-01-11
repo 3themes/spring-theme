@@ -137,6 +137,20 @@ body {
 
         .content-main {
             width: 64.666666667%;
-            padding-right: 1em;
         }
+
+    //Fallback for no-flexbox browsers
+    //Flexbox mixins include code for every browser but IE <= 9.
+    .no-flexbox {
+        .content {
+            display: block;
+            @include grid-row();
+        }
+
+        .content-main {
+            float: left;
+            padding-right: 1em;
+            @include grid-column(8, 100%, 12);
+        }
+    }
 }

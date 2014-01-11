@@ -889,7 +889,23 @@ body {
 
   .content-main {
     width: 64.666666667%;
+  }
+
+  .no-flexbox .content {
+    display: block;
+    *zoom: 1;
+  }
+  .no-flexbox .content:before, .no-flexbox .content:after {
+    display: table;
+    content: "";
+  }
+  .no-flexbox .content:after {
+    clear: both;
+  }
+  .no-flexbox .content-main {
+    float: left;
     padding-right: 1em;
+    width: 66.66667%;
   }
 }
 .header-main {
@@ -1289,6 +1305,11 @@ body {
   .sidebar-main hr {
     display: block;
     margin: 1em auto;
+  }
+
+  .no-flexbox .sidebar-main {
+    float: right;
+    width: 33.33333%;
   }
 }
 .footer-main {
