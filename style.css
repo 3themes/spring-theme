@@ -1023,23 +1023,24 @@ body {
   padding: 1em;
 }
 
-.main-menu {
+.nav-main--menu {
   margin: 0;
   padding: 0;
 }
-.main-menu ul {
+.nav-main--menu ul {
   margin: 0;
-}
-.main-menu li {
   list-style: none;
+}
+
+.menu-item {
   padding: 0;
   margin-bottom: 0;
 }
-.main-menu li:last-child {
+.menu-item:last-child {
   border-bottom: 0;
 }
-.main-menu a,
-.main-menu a:visited {
+.menu-item a,
+.menu-item a:visited {
   display: block;
   padding: .5em 0;
   -webkit-transition: color 0.2s;
@@ -1049,8 +1050,8 @@ body {
   transition: color 0.2s;
   color: #84b100;
 }
-.main-menu a:hover,
-.main-menu a:visited:hover {
+.menu-item a:hover,
+.menu-item a:visited:hover {
   color: #719800;
 }
 

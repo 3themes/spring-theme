@@ -29,36 +29,36 @@
     padding: 1em;
 }
 
-    .main-menu {
+    .nav-main--menu {
         margin: 0;
         padding: 0;
 
         ul {
             margin: 0;
-        }
-
-        li {
             list-style: none;
+        }
+    }
+
+        .menu-item {
             padding: 0;
             margin-bottom: 0;
 
             &:last-child {
                 border-bottom: 0;
             }
-        }
 
-        a,
-        a:visited {
-            display: block;
-            padding: .5em 0;
-            @include transition(color .2s);
-            color: $linkColor;
+            a,
+            a:visited {
+                display: block;
+                padding: .5em 0;
+                @include transition(color .2s);
+                color: $linkColor;
 
-            &:hover {
-                color: darken($linkColor, 5%);
+                &:hover {
+                    color: darken($linkColor, 5%);
+                }
             }
         }
-    }
 
 .nav-pager {
     @include clearfix();
@@ -92,18 +92,15 @@
         text-transform: uppercase;
     }
 
-        .main-menu {
+        .menu-item {
+            display: inline-block;
+
+            & > a {
+                padding: .25em .5em;
+            }
         }
 
-            .menu-item {
-                display: inline-block;
-
-                & > a {
-                    padding: .25em .5em;
-                }
+            .sub-menu {
+                display: none;
             }
-
-                .sub-menu {
-                    display: none;
-                }
 }
