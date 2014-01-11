@@ -59,3 +59,21 @@
             }
         }
     }
+
+.nav-pager {
+    @include clearfix();
+}
+
+    .pager {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .pager--previous {
+            float: left;
+        }
+
+        .pager--next {
+            float: right;
+        }
