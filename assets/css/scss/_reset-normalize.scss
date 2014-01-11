@@ -100,7 +100,7 @@ h1,
 .h1 {
     margin-bottom: $baselineHeight / 1.5;
     color: $h1Color;
-    font-size: 1.75em;
+    font-size: $h1Size;
     font-weight: $h1FontWeight;
 
     a {
@@ -112,7 +112,7 @@ h2,
 .h2 {
     margin-bottom: $baselineHeight / 1.5;
     color: $h2Color;
-    font-size: 1.375em;
+    font-size: $h2Size;
     font-weight: $h2FontWeight;
 
     a {
@@ -124,7 +124,7 @@ h3,
 .h3 {
     margin-bottom: $baselineHeight / 1.75;
     color: $h3Color;
-    font-size: 1.25em;
+    font-size: $h3Size;
     font-weight: $h3FontWeight;
 
     a {
@@ -136,7 +136,7 @@ h4,
 .h4 {
     margin-bottom: $baselineHeight / 1.75;
     color: $h4Color;
-    font-size: 1em;
+    font-size: $h4Size;
     font-weight: $h4FontWeight;
 
     a {
@@ -148,7 +148,7 @@ h5,
 .h5 {
     margin-bottom: $baselineHeight / 2;
     color: $h5Color;
-    font-size: 1em;
+    font-size: $h5Size;
     font-weight: $h5FontWeight;
 
     a {
@@ -159,8 +159,7 @@ h5,
 h6,
 .h6 {
     margin-bottom: $baselineHeight / 2;
-    color: $h6Color;
-    font-weight: normal;
+    color: $h6Size;
     font-weight: $h6FontWeight;
 
     a {

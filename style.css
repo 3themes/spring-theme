@@ -200,7 +200,7 @@ h1,
 .h1 {
   margin-bottom: 0.73333em;
   color: #322e2f;
-  font-size: 1.75em;
+  font-size: 2.25em;
   font-weight: 200;
 }
 h1 a,
@@ -212,7 +212,7 @@ h2,
 .h2 {
   margin-bottom: 0.73333em;
   color: #58595b;
-  font-size: 1.375em;
+  font-size: 1.75em;
   font-weight: 200;
 }
 h2 a,
@@ -224,7 +224,7 @@ h3,
 .h3 {
   margin-bottom: 0.62857em;
   color: #58595b;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 200;
 }
 h3 a,
@@ -259,8 +259,7 @@ h5 a,
 h6,
 .h6 {
   margin-bottom: 0.55em;
-  color: #92948f;
-  font-weight: normal;
+  color: 1em;
   font-weight: 200;
 }
 h6 a,
@@ -1146,6 +1145,7 @@ body {
   width: -moz-calc(100% - 7em);
   width: -webkit-calc(100% - 7em);
   width: calc(100% - 7em);
+  max-width: 30em;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1155,6 +1155,8 @@ body {
 }
 .search input[type="text"],
 .search input[type="search"] {
+  max-width: 480px;
+  max-width: 30rem;
   padding: .5em .25em;
   border: 1px solid #d3d5cb;
 }
