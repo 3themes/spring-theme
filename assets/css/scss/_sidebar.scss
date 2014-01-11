@@ -4,7 +4,6 @@
     top: 0;
     width: 80%;
     padding: 5%;
-    font-size: .875em;
 
     h1 {
         font-size: 1.375em;
@@ -60,9 +59,8 @@
 @media only screen and (min-width: #{$largeBreakpoint}) {
     //approximate min-width: 992px
     .sidebar-main {
-        float: right;
-        @include grid-column(4, 100%, 12);
-        padding: 0 0 1em 0;
+        width: 31.33333333333%;
+        padding: 0;
         border: 0;
         margin-top: 0;
 

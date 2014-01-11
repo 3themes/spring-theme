@@ -130,12 +130,13 @@ body {
 @media only screen and (min-width: #{$largeBreakpoint}) {
     //approximate min-width: 992px
     .content {
-        @include grid-row();
+        @include flexbox();
+        @include flexbox-justify-content(space-between);
+        @include flexbox-align-items(flex-start);
     }
 
         .content-main {
-            float: left;
-            @include grid-column(8, 100%, 12);
+            width: 64.666666667%;
             padding-right: 1em;
         }
 }

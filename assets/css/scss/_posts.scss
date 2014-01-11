@@ -4,7 +4,7 @@
 }
 
     .post--title {
-        @include rem-px('margin-bottom', 1rem);
+        @include rem-px('margin-bottom', .75rem);
 
         a {
             &:hover {
@@ -15,12 +15,11 @@
 
     .post--thumbnail {
         width: 100%;
-        margin:0 0 1em 0;
+        @include rem-px('margin-bottom', .75rem);
     }
 
     .post--byline {
-        @include rem-px('margin', 0, 0, .875rem, 0);
-        font-size: .875em;
+        @include rem-px('margin', 0, 0, .75rem, 0);
         font-style: italic;
 
         a {
@@ -29,7 +28,15 @@
     }
 
     .post--metadata {
+        margin-top: 1em;
+        padding-top: .25em;
         font-size: .875em;
+        border-top: 1px solid $springLightGrey;
+        font-style: italic;
+
+        a {
+            font-style: italic;
+        }
     }
 
         .post--metadata--title {

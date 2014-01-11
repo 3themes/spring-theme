@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, cod
   font-weight: normal;
   font-style: normal;
   font-size: 100%;
-  line-height: 1.1;
+  line-height: 1.35em;
   font-family: inherit;
 }
 
@@ -273,13 +273,17 @@ h6 a,
   font-weight: 200;
 }
 
-p,
 ol,
 ul,
-dl,
-address {
+dl {
   margin-bottom: 1.1em;
-  line-height: 1.32em;
+  line-height: 1.375em;
+}
+
+p,
+address {
+  margin-bottom: 0.55em;
+  line-height: 1.375em;
 }
 
 small {
@@ -293,7 +297,7 @@ ol {
 }
 
 li {
-  margin-bottom: .375em;
+  margin-bottom: .5em;
 }
 
 blockquote {
@@ -871,19 +875,20 @@ body {
 }
 @media only screen and (min-width: 64em) {
   .content {
-    *zoom: 1;
-  }
-  .content:before, .content:after {
-    display: table;
-    content: "";
-  }
-  .content:after {
-    clear: both;
+    display: -ms-flexbox;
+    -ms-box-orient: horizontal;
+    display: -webkit-flex;
+    display: flex;
+    -ms-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-align: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
   }
 
   .content-main {
-    float: left;
-    width: 66.66667%;
+    width: 64.666666667%;
     padding-right: 1em;
   }
 }
@@ -1115,8 +1120,8 @@ body {
 }
 
 .post--title {
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .post--title a:hover {
   text-decoration: none;
@@ -1124,13 +1129,13 @@ body {
 
 .post--thumbnail {
   width: 100%;
-  margin: 0 0 1em 0;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .post--byline {
-  margin: 0 0 14px 0;
-  margin: 0 0 0.875rem 0;
-  font-size: .875em;
+  margin: 0 0 12px 0;
+  margin: 0 0 0.75rem 0;
   font-style: italic;
 }
 .post--byline a {
@@ -1138,7 +1143,14 @@ body {
 }
 
 .post--metadata {
+  margin-top: 1em;
+  padding-top: .25em;
   font-size: .875em;
+  border-top: 1px solid #d3d5cb;
+  font-style: italic;
+}
+.post--metadata a {
+  font-style: italic;
 }
 
 .post--metadata--title {
@@ -1209,7 +1221,6 @@ body {
   top: 0;
   width: 80%;
   padding: 5%;
-  font-size: .875em;
 }
 .sidebar-main h1 {
   font-size: 1.375em;
@@ -1259,9 +1270,8 @@ body {
 }
 @media only screen and (min-width: 64em) {
   .sidebar-main {
-    float: right;
-    width: 33.33333%;
-    padding: 0 0 1em 0;
+    width: 31.33333333333%;
+    padding: 0;
     border: 0;
     margin-top: 0;
   }
