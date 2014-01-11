@@ -4,7 +4,7 @@
 }
 
     .post--title {
-        margin-bottom: 0;
+        @include rem-px('margin-bottom', 1rem);
 
         a {
             &:hover {
@@ -15,12 +15,12 @@
 
     .post--thumbnail {
         width: 100%;
-        margin:1em 0;
+        margin:0 0 1em 0;
     }
 
     .post--byline {
         @include rem-px('margin', 0, 0, .875rem, 0);
-        font-size: .75em;
+        font-size: .875em;
         font-style: italic;
 
         a {
