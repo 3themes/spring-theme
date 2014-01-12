@@ -914,6 +914,13 @@ body {
     width: 66.66667%;
   }
 }
+@media only screen and (min-width: 83.5em) {
+  .content {
+    max-width: 1352px;
+    max-width: 84.5rem;
+    margin: 0 auto;
+  }
+}
 .header-main {
   position: relative;
   margin-bottom: 2em;
@@ -981,11 +988,12 @@ body {
   border-right: 6px solid white;
 }
 
-.blog-name {
+.header--blog-name {
+  margin-top: 1em;
   padding: 0 24px;
   padding: 0 1.5rem;
 }
-.blog-name a {
+.header--blog-name a {
   display: block;
   height: 0;
   margin-bottom: 16px;
@@ -1001,13 +1009,17 @@ body {
 
 @media only screen and (min-width: 48.5em) {
   .header-main {
+    margin-bottom: 0;
+  }
+
+  .header--inner {
     *zoom: 1;
   }
-  .header-main:before, .header-main:after {
+  .header--inner:before, .header--inner:after {
     display: table;
     content: "";
   }
-  .header-main:after {
+  .header--inner:after {
     clear: both;
   }
 
@@ -1015,16 +1027,24 @@ body {
     display: none;
   }
 
-  .blog-name {
+  .header--blog-name {
     float: left;
     width: 12em;
     margin-top: -.75em;
   }
 }
+@media only screen and (min-width: 83.5em) {
+  .header--inner {
+    max-width: 1352px;
+    max-width: 84.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .nav-quicklinks {
   width: 100%;
   background: #58595b;
-  padding: .5em 1em;
 }
 .nav-quicklinks a {
   color: #d3d5cb;
@@ -1033,7 +1053,7 @@ body {
 
 .quicklinks-menu {
   margin: 0;
-  padding: 0;
+  padding: .5em 1em;
 }
 .quicklinks-menu li {
   display: inline-block;
@@ -1127,6 +1147,15 @@ body {
 
   .sub-menu {
     display: none;
+  }
+}
+@media only screen and (min-width: 83.5em) {
+  .quicklinks-menu {
+    max-width: 1352px;
+    max-width: 84.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .post {

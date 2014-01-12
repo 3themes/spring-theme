@@ -69,8 +69,10 @@
             }
         }
 
-    .blog-name {
+    .header--blog-name {
+        margin-top: 1em;
         @include rem-px('padding', 0, 1.5rem);
+
         a {
             display: block;
             height: 0;
@@ -86,16 +88,29 @@
 
 @media only screen and (min-width: #{$midBreakpoint}) {
     .header-main {
-        @include clearfix();
+        margin-bottom: 0;
     }
 
-    .open-button-wrapper {
-        display: none;
-    }
+        .header--inner {
+            @include clearfix();
+        }
 
-    .blog-name {
-        float: left;
-        width: 12em;
-        margin-top: -.75em;
+            .open-button-wrapper {
+                display: none;
+            }
+
+            .header--blog-name {
+                float: left;
+                width: 12em;
+                margin-top: -.75em;
+            }
+}
+
+
+
+@media only screen and (min-width: #{$widescreenBreakpoint}) {
+    .header--inner {
+        @include rem-px('max-width', 84.5rem);
+        @include center-block;
     }
 }

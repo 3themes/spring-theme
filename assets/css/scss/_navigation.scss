@@ -1,7 +1,6 @@
 .nav-quicklinks {
     width: 100%;
     background: $springDarkGrey;
-    padding: .5em 1em;
 
     a {
         color: $springLightGrey;
@@ -11,7 +10,7 @@
 
     .quicklinks-menu {
         margin: 0;
-        padding: 0;
+        padding: .5em 1em;
 
         li {
             display: inline-block;
@@ -103,4 +102,14 @@
             .sub-menu {
                 display: none;
             }
+}
+
+
+
+
+@media only screen and (min-width: #{$widescreenBreakpoint}) {
+    .quicklinks-menu {
+        @include rem-px('max-width', 84.5rem);
+        @include center-block();
+    }
 }
