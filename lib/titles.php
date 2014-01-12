@@ -7,7 +7,7 @@ function spring_title() {
     if (get_option('page_for_posts', true)) {
       return get_the_title(get_option('page_for_posts', true));
     } else {
-      return __('Hot Posts', 'spring-theme');
+      return __('Latest Posts', 'spring-theme');
     }
   } elseif (is_archive()) {
     $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
