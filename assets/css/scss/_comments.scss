@@ -9,14 +9,19 @@
 
         ul,
         ol {
-            @include rem-px('margin-left', 5rem);
+            margin-left: 0;
+            margin-bottom: 0;
             padding: 0;
+            @include rem-px('padding-left', 5rem);
+            //TODO: Ask Michelle about design. Commented out because it looks odd with nested nested comments.
+            //border-left: 1px solid $springLightGrey;
             list-style: none;
         }
     }
 
         .comment {
             @include clearfix();
+            clear: both;
 
             .avatar {
                 float: left;
@@ -36,7 +41,7 @@
                 .comment--name {
                     @include rem-px('font-size', 1rem);
                     font-weight: bold;
-                    
+
                     a {
                         font-weight: bold;
                     }
