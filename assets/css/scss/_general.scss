@@ -98,9 +98,6 @@ body {
     }
 }
 
-@media only screen and (min-width: #{$midBreakpoint}) {
-}
-
 @media only screen and (min-width: #{$smallBreakpoint}) {
     .alignright {
         float: right;
@@ -126,6 +123,12 @@ body {
     }
 }
 
+@media only screen and (min-width: #{$midBreakpoint}) {
+    .wrapper {
+        padding: 0 3em;
+    }
+}
+
 @media only screen and (min-width: #{$largeBreakpoint}) {
     //approximate min-width: 992px
     .content {
@@ -137,6 +140,7 @@ body {
 
         .content--body {
             width: 64.666666667%;
+            @include css3-calc('width','66.6666666667 - 2.5em');
         }
 
     //Fallback for no-flexbox browsers
