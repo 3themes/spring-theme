@@ -494,7 +494,7 @@ textarea,
   max-width: 30em;
   padding: 0.5em;
   margin-bottom: 1.1em;
-  background-color: #f4f4f2;
+  background-color: white;
   border: 1px solid #d3d5cb;
   color: #58595b;
   font-size: .875em;
@@ -1379,7 +1379,7 @@ body {
   bottom: 0;
   width: 2em;
   padding: 0;
-  background: #f4f4f2 url(assets/img/search-icon.png) no-repeat 50% 45%;
+  background: white url(assets/img/search-icon.png) no-repeat 50% 45%;
   border: 1px solid #d3d5cb;
   border-left: 0;
   text-shadow: none;
