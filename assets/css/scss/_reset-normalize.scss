@@ -202,11 +202,13 @@ blockquote {
     font-family: $blockquoteFontFamily;
     @include rem-px('font-size', $blockquoteFontSize);
     font-style: $blockquoteFontStyle;
+    font-weight: $blockquoteFontWeight;
 
     * {
         font-family: $blockquoteFontFamily;
         @include rem-px('font-size', $blockquoteFontSize);
         font-style: $blockquoteFontStyle;
+        font-weight: $blockquoteFontWeight;
     }
 }
 

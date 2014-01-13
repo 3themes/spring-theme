@@ -310,12 +310,14 @@ blockquote {
   font-size: 20px;
   font-size: 1.25rem;
   font-style: italic;
+  font-weight: 200;
 }
 blockquote * {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
   font-style: italic;
+  font-weight: 200;
 }
 
 dl,
