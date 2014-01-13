@@ -212,7 +212,7 @@ blockquote {
 
 dl,
 dd {
-    margin-bottom: $baselineHeight
+    margin-bottom: $baselineHeight / 2;
 }
 
 dt {
@@ -260,7 +260,7 @@ code,
 kdb,
 samp {
     display: block;
-    margin-bottom: 1em;
+    margin: $codeMargin;
     padding: $codePadding;
     background-color: $codeBackground;
     border: $codeBorder;
@@ -305,6 +305,7 @@ a {
     }
 
     &:visited {
+        color: $linkVisited;
         color: $linkVisited;
     }
 

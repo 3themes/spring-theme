@@ -320,7 +320,7 @@ blockquote * {
 
 dl,
 dd {
-  margin-bottom: 1.1em;
+  margin-bottom: 0.55em;
 }
 
 dt {
@@ -369,7 +369,7 @@ code,
 kdb,
 samp {
   display: block;
-  margin-bottom: 1em;
+  margin: 1em 0;
   padding: 0.5em;
   background-color: #f4f4f2;
   border: 0;
@@ -413,6 +413,7 @@ a:hover {
   outline: 0;
 }
 a:visited {
+  color: #5e7e00;
   color: #5e7e00;
 }
 a:focus, a:active {
@@ -1173,8 +1174,8 @@ body {
 }
 
 .post--title {
-  margin-bottom: 12px;
-  margin-bottom: 0.75rem;
+  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 .post--title a:hover {
   text-decoration: none;
@@ -1401,23 +1402,4 @@ body {
     width: 15em;
     margin-right: 1.375em;
   }
-}
-code {
-  margin: 1em 0;
-}
-
-td {
-  padding: .3em;
-}
-
-dt {
-  margin: 0 0 .3em;
-}
-
-dd {
-  margin: 0 1em 1.1em 0;
-  padding-left: .75em;
-  border-left: 0.75em solid #bfbfbf;
-  font-family: "Source Sans Pro", sans-serif;
-  font-style: italic;
 }
