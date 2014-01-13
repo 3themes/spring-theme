@@ -1,0 +1,4 @@
+%max-width {
+    @include css3-calc('padding-left', '(100% - 83.5rem) / 2');
+    @include css3-calc('padding-right', '(100% - 83.5rem) / 2');
+}
