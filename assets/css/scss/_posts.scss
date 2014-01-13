@@ -4,7 +4,7 @@
 }
 
     .post--title {
-        @include rem-px('margin-bottom', .25rem);
+        @include rem-px('margin-bottom', .75rem);
 
         a {
             &:hover {

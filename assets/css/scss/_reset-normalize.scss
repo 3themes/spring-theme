@@ -94,6 +94,10 @@ h6 {
     line-height: $headingLineHeight;
     text-rendering:  optimizeLegibility;
     text-shadow: $headingTextShadow;
+
+    * {
+        line-height: $headingLineHeight;
+    }
 }
 
 h1,
