@@ -154,7 +154,7 @@ audio[controls], canvas, video {
 html {
   width: 100%;
   height: 100%;
-  background: #f4f4f2;
+  background: white;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -821,7 +821,7 @@ body {
 
 .sticky header,
 .sticky main {
-  background: #e8e8e4;
+  background: #f2f2f2;
 }
 .sticky header {
   padding: 1em;
@@ -830,7 +830,7 @@ body {
   padding: 0 1em;
 }
 .sticky footer {
-  border: 1em solid #e8e8e4;
+  border: 1em solid #f2f2f2;
   border-top: 0;
 }
 
@@ -1337,6 +1337,12 @@ body {
     width: 33.33333%;
   }
 }
+.sidebar .search {
+  width: 100%;
+  max-width: inherit;
+  margin: 0;
+}
+
 .footer-main {
   margin-top: 1em;
   font-size: .675em;
