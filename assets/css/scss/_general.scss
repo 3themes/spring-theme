@@ -54,7 +54,6 @@ body {
 .aligncenter,
 .alignnone {
     display: block;
-    width: 100%;
     margin: 0 0 .5em 0;
 }
 
@@ -105,24 +104,24 @@ body {
 @media only screen and (min-width: #{$smallBreakpoint}) {
     .alignright {
         float: right;
-        width: 50%;
+        max-width: 50%;
         margin: 0 0 .5em .5em;
     }
 
     .alignleft {
         float: left;
-        width: 50%;
+        max-width: 50%;
         margin: 0 .5em .5em 0;
     }
 
     .aligncenter {
-        width: auto;
+        display: block;
         margin: .5em auto;
     }
 
     .alignnone {
         float: none;
-        width: auto;
+        max-width: inherit;
         margin: 0 .5em .5em 0;
     }
 }
