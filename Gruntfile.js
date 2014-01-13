@@ -38,7 +38,8 @@ grunt.initConfig({
         dist: {
             src: [
             'assets/js/lib/*.js',
-            'assets/js/spring.js'
+            'assets/js/spring.js',
+            'assets/js/sidebar.js'
             ],
             dest: 'assets/js/build/spring-production.js'
         }

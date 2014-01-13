@@ -14,19 +14,27 @@
     //approximate min-width: 768px
     .content--sidebar {
         position: relative;
+        @include flexbox();
+        @include flexbox-justify-content(space-between);
+        @include flexbox-align-items(flex-start);
         left: auto;
         top: auto;
         width: 100%;
         margin-top: 2.5%;
         padding: 2.5%;
         border: 1px solid $lightGrey;
-        @include clearfix();
     }
+
+        .sidebar--leftcol,
+        .sidebar--rightcol {
+            width: 45%;
+        }
 }
 
 @media only screen and (min-width: #{$largeBreakpoint}) {
     //approximate min-width: 992px
     .content--sidebar {
+        display: block;
         width: 31.33333333333%;
         padding: 0;
         border: 0;

@@ -1294,24 +1294,38 @@ body {
 @media only screen and (min-width: 48.5em) {
   .content--sidebar {
     position: relative;
+    display: -ms-flexbox;
+    -ms-box-orient: horizontal;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
     left: auto;
     top: auto;
     width: 100%;
     margin-top: 2.5%;
     padding: 2.5%;
     border: 1px solid #bfbfbf;
-    *zoom: 1;
   }
-  .content--sidebar:before, .content--sidebar:after {
-    display: table;
-    content: "";
-  }
-  .content--sidebar:after {
-    clear: both;
+
+  .sidebar--leftcol,
+  .sidebar--rightcol {
+    width: 45%;
   }
 }
 @media only screen and (min-width: 64em) {
   .content--sidebar {
+    display: block;
     width: 31.33333333333%;
     padding: 0;
     border: 0;
