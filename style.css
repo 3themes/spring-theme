@@ -1280,6 +1280,10 @@ body {
   font-style: italic;
 }
 
+.comments--respond {
+  margin-top: 2.125em;
+}
+
 .content--sidebar {
   position: absolute;
   left: 100%;
