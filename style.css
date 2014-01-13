@@ -1337,12 +1337,6 @@ body {
     width: 33.33333%;
   }
 }
-.sidebar .search {
-  width: 100%;
-  max-width: inherit;
-  margin: 0;
-}
-
 .footer-main {
   margin-top: 1em;
   font-size: .675em;
@@ -1386,6 +1380,12 @@ body {
   text-indent: 1000%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.sidebar .search {
+  width: 100%;
+  max-width: inherit;
+  margin: 0;
 }
 
 @media only screen and (min-width: 48.5em) {
