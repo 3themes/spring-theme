@@ -119,6 +119,14 @@ $blockquoteFontFamily: $headingFont;
 $blockquoteFontSize: 1.25rem;
 $blockquoteFontStyle: italic;
 
+// Code/Pre blocks
+$codePadding: $gutter / 2;
+$codeBackground: $springWhite;
+$codeBorder: 0;
+$codeFontFamily: $codeFont;
+$codeFontSize: .875em;
+$codeColor: $textColor;
+
 // Breakpoints
 $smallBreakpoint: 30.5em;
 $midBreakpoint: 48.5em;

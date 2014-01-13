@@ -261,12 +261,12 @@ kdb,
 samp {
     display: block;
     margin-bottom: 1em;
-    padding: $gutter / 4;
-    background-color: $springLightGrey;
-    border: 1px solid $springDarkGrey;
-    font-family: $codeFont;
-    font-size: .875em;
-    color: $darkGrey;
+    padding: $codePadding;
+    background-color: $codeBackground;
+    border: $codeBorder;
+    font-family: $codeFontFamily;
+    font-size: $codeFontSize;
+    color: $codeColor;
 }
 
 pre {
@@ -350,6 +350,7 @@ hr {
 
 img {
     max-width: 100%;
+    height: auto;
     height: auto;
     vertical-align: middle;
     border: 0;

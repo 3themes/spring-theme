@@ -370,12 +370,12 @@ kdb,
 samp {
   display: block;
   margin-bottom: 1em;
-  padding: 0.25em;
-  background-color: #d3d5cb;
-  border: 1px solid #58595b;
+  padding: 0.5em;
+  background-color: #f4f4f2;
+  border: 0;
   font-family: "Source Code Pro", sans-serif;
-  font-size: .875em;
-  color: #404040;
+  font-size: 0.875em;
+  color: #58595b;
 }
 
 pre {
@@ -454,6 +454,7 @@ hr {
 
 img {
   max-width: 100%;
+  height: auto;
   height: auto;
   vertical-align: middle;
   border: 0;
