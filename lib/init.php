@@ -11,6 +11,7 @@ function spring_setup() {
   register_nav_menus(array(
     'primary_navigation' => __('Primary Navigation', 'spring-theme'),
     'quicklink_navigation' => __('Quicklink Navigation', 'spring-theme'),
+    'footer_navigation' => __('Footer Navigation', 'spring-theme'),
   ));
 
   // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)
