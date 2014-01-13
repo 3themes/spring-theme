@@ -383,7 +383,7 @@ samp {
   padding: 0.5em;
   background-color: #f4f4f2;
   border: 0;
-  font-family: "Source Code Pro", sans-serif;
+  font-family: "Source Code Pro", monospace;
   font-size: 0.875em;
   color: #58595b;
 }
@@ -1183,8 +1183,8 @@ body {
 }
 
 .post--title {
-  margin-bottom: 4px;
-  margin-bottom: 0.25rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .post--title a:hover {
   text-decoration: none;
