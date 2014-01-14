@@ -1089,14 +1089,13 @@ body {
   width: 80%;
   padding: 1em;
 }
+.nav-main ul {
+  list-style: none;
+}
 
 .nav-main--menu {
   margin: 0;
   padding: 0;
-}
-.nav-main--menu ul {
-  margin: 0;
-  list-style: none;
 }
 
 .menu-item {
