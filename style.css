@@ -1165,11 +1165,10 @@ body {
     width: auto;
     text-transform: uppercase;
   }
-
-  .menu-item {
+  .nav-main .menu-item {
     display: inline-block;
   }
-  .menu-item > a {
+  .nav-main .menu-item > a {
     padding: .25em .5em;
   }
 
