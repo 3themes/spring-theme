@@ -1009,7 +1009,7 @@ body {
 }
 
 .header--blog-name {
-  margin-top: 1em;
+  margin: 1em auto 0 auto;
   padding: 0 24px;
   padding: 0 1.5rem;
 }
@@ -1027,6 +1027,12 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (min-width: 30.5em) {
+  .header--blog-name {
+    width: 70%;
+    max-width: 9em;
+  }
+}
 @media only screen and (min-width: 48.5em) {
   .header-main {
     margin-bottom: 0;
@@ -1050,7 +1056,7 @@ body {
 
   .header--blog-name {
     float: left;
-    width: 12em;
+    width: 9em;
     margin-top: -.75em;
   }
 }
