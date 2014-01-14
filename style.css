@@ -1232,6 +1232,10 @@ body {
   font-style: italic;
 }
 
+.single .post--metadata {
+  margin-bottom: 3em;
+}
+
 .post--metadata--title {
   font-weight: bold;
 }
@@ -1239,10 +1243,6 @@ body {
 .post--hr {
   width: 50%;
   margin: 3em auto;
-}
-
-.comments {
-  margin-top: 1em;
 }
 
 .comments--list {
@@ -1255,8 +1255,8 @@ body {
   margin-left: 0;
   margin-bottom: 0;
   padding: 0;
-  padding-left: 80px;
-  padding-left: 5rem;
+  padding-left: 40px;
+  padding-left: 2.5rem;
   list-style: none;
 }
 
@@ -1273,20 +1273,20 @@ body {
 }
 .comment .avatar {
   float: left;
-  width: 64px;
-  width: 4rem;
-  height: 64px;
-  height: 4rem;
-  margin-right: 16px;
-  margin-right: 1rem;
+  width: 32px;
+  width: 2rem;
+  height: 32px;
+  height: 2rem;
+  margin-right: 4px;
+  margin-right: 0.25rem;
 }
 
 .comment--body {
   float: right;
   width: 60%;
-  width: -moz-calc(100% - 5rem);
-  width: -webkit-calc(100% - 5rem);
-  width: calc(100% - 5rem);
+  width: -moz-calc(100% - 2.5rem);
+  width: -webkit-calc(100% - 2.5rem);
+  width: calc(100% - 2.5rem);
   margin-bottom: 2.5em;
 }
 
@@ -1307,10 +1307,28 @@ body {
   font-style: italic;
 }
 
-.comments--respond {
-  margin-top: 2.125em;
-}
+@media only screen and (min-width: 48.5em) {
+  .comments--list ol,
+  .comments--list ul {
+    padding-left: 80px;
+    padding-left: 5rem;
+  }
 
+  .comment .avatar {
+    width: 64px;
+    width: 4rem;
+    height: 64px;
+    height: 4rem;
+    margin-right: 16px;
+    margin-right: 1rem;
+  }
+
+  .comment--body {
+    width: -moz-calc(100% - 5rem);
+    width: -webkit-calc(100% - 5rem);
+    width: calc(100% - 5rem);
+  }
+}
 .content--sidebar {
   position: absolute;
   left: 100%;
@@ -1373,9 +1391,21 @@ body {
   }
 }
 .footer-main {
-  margin-top: 1em;
-  font-size: .675em;
-  text-align: center;
+  padding: 1em;
+}
+
+.footer--copyright {
+  border-top: 1px solid #d3d5cb;
+  padding-top: .5em;
+}
+
+.footer--menu {
+  margin: 1em 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.footer--menu a {
+  padding: 0;
 }
 
 .search {

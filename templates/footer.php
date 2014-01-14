@@ -1,9 +1,13 @@
-<footer class="content-info container" role="contentinfo">
-	<div class="row">
-		<div class="col-lg-12">
-			<?php dynamic_sidebar('sidebar-footer'); ?>
-			<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
-		</div>
-	</div>
+<footer class="footer-main" role="contentinfo">
+	<aside class="footer--copyright">
+        &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
+	</aside>
+    <nav class="nav-footer" role="navigation">
+        <?php
+        if (has_nav_menu('footer_navigation')) :
+            wp_nav_menu(array('theme_location' => 'footer_navigation', 'menu_class' => 'footer--menu'));
+        endif;
+        ?>
+    </nav>
 </footer>
 <?php wp_footer(); ?>

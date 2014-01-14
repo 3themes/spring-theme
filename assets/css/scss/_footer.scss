@@ -1,5 +1,18 @@
 .footer-main {
-	margin-top: 1em;
-	font-size: .675em;
-	text-align: center;
+    padding: 1em;
 }
+
+    .footer--copyright {
+        border-top: 1px solid $springLightGrey;
+        padding-top: .5em;
+    }
+
+    .footer--menu {
+        margin: 1em 0 0 0;
+        padding: 0;
+        list-style: none;
+
+        a {
+            padding: 0;
+        }
+    }
