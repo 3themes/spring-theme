@@ -886,8 +886,8 @@ body {
   }
 }
 @media only screen and (min-width: 48.5em) {
-  .wrapper {
-    padding: 0 3em;
+  .content {
+    padding: 0 4em;
   }
 }
 @media only screen and (min-width: 64em) {
@@ -1034,6 +1034,7 @@ body {
 
   .header--inner {
     *zoom: 1;
+    padding: 0 3em;
   }
   .header--inner:before, .header--inner:after {
     display: table;

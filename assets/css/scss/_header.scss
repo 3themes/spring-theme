@@ -93,6 +93,7 @@
 
         .header--inner {
             @include clearfix();
+            padding: 0 3em;
         }
 
             .open-button-wrapper {
