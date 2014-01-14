@@ -1,5 +1,5 @@
 .comments {
-    margin-top: 1em;
+    //margin-top: 2.125em;
 }
 
     .comments--list {
@@ -12,7 +12,7 @@
             margin-left: 0;
             margin-bottom: 0;
             padding: 0;
-            @include rem-px('padding-left', 5rem);
+            @include rem-px('padding-left', 2.5rem);
             //TODO: Ask Michelle about design. Commented out because it looks odd with nested nested comments.
             //border-left: 1px solid $springLightGrey;
             list-style: none;
@@ -25,16 +25,16 @@
 
             .avatar {
                 float: left;
-                @include rem-px('width', 4rem);
-                @include rem-px('height', 4rem);
-                @include rem-px('margin-right', 1rem);
+                @include rem-px('width', 2rem);
+                @include rem-px('height', 2rem);
+                @include rem-px('margin-right', .25rem);
             }
         }
 
             .comment--body {
                 float: right;
                 width: 60%;
-                @include css3-calc('width', '100% - 5rem');
+                @include css3-calc('width', '100% - 2.5rem');
                 margin-bottom: 2.5em;
             }
 
@@ -56,5 +56,26 @@
                 }
 
     .comments--respond {
-        margin-top: 2.125em;
+        //margin-top: 2.125em;
     }
+
+@media only screen and (min-width: #{$midBreakpoint}) {
+    .comments--list {
+        ol,
+        ul {
+            @include rem-px('padding-left', 5rem);
+        }
+    }
+
+        .comment {
+            .avatar {
+                @include rem-px('width', 4rem);
+                @include rem-px('height', 4rem);
+                @include rem-px('margin-right', 1rem);
+            }
+        }
+
+            .comment--body {
+                @include css3-calc('width', '100% - 5rem');
+            }
+}
