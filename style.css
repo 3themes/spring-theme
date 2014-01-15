@@ -1213,55 +1213,56 @@ body {
     margin-right: auto;
   }
 }
-.nav-main--menu, .nav-main--menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+@media only screen and (min-width: 48.5em) {
+  .nav-main--menu, .nav-main--menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-.nav-main--menu ul {
-  position: absolute;
-  display: none;
-  left: .5em;
-  top: 100%;
-  padding: 1em;
-  background: #d3d5cb;
-  z-index: 99;
-  -webkit-transition: background 0.2s;
-  -moz-transition: background 0.2s;
-  -ms-transition: background 0.2s;
-  -o-transition: background 0.2s;
-  transition: background 0.2s;
+  .nav-main--menu ul {
+    position: absolute;
+    display: none;
+    left: .5em;
+    top: 100%;
+    padding: 1em;
+    background: #d3d5cb;
+    z-index: 99;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -ms-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+  }
+  .nav-main--menu ul ul {
+    top: 0;
+    left: 100%;
+    background: #c7cabd;
+  }
+  .nav-main--menu ul li {
+    min-width: 10em;
+    max-width: 15em;
+  }
+  .nav-main--menu li {
+    position: relative;
+  }
+  .nav-main--menu li:hover > ul, .nav-main--menu li.sfHover > ul {
+    display: block;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .nav-main--menu > li:last-child ul {
+    left: auto;
+    right: 0;
+  }
+  .nav-main--menu a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
-.nav-main--menu ul ul {
-  top: 0;
-  left: 100%;
-  background: #c7cabd;
-}
-.nav-main--menu ul li {
-  min-width: 10em;
-  max-width: 15em;
-}
-.nav-main--menu li {
-  position: relative;
-}
-.nav-main--menu li:hover > ul, .nav-main--menu li.sfHover > ul {
-  display: block;
-  -webkit-transition: none;
-  transition: none;
-}
-.nav-main--menu > li:last-child ul {
-  left: auto;
-  right: 0;
-}
-.nav-main--menu a {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .post {
   *zoom: 1;
   margin-bottom: 2em;

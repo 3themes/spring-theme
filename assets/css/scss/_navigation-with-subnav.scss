@@ -1,61 +1,63 @@
 //TODO: CSS for subnav
-.nav-main--menu, .nav-main--menu * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+@media only screen and (min-width: #{$midBreakpoint}) {
+    .nav-main--menu, .nav-main--menu * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
-.nav-main--menu {
-    ul {
-        position: absolute;
-        display: none;
-        left: .5em;
-        top: 100%;
-        padding: 1em;
-        background: $springLightGrey;
-        z-index: 99;
-        @include transition(background .2s);
-
-
+    .nav-main--menu {
         ul {
-            top: 0;
-            left: 100%;
-            background: darken($springLightGrey, 5%);
+            position: absolute;
+            display: none;
+            left: .5em;
+            top: 100%;
+            padding: 1em;
+            background: $springLightGrey;
+            z-index: 99;
+            @include transition(background .2s);
+
+
+            ul {
+                top: 0;
+                left: 100%;
+                background: darken($springLightGrey, 5%);
+            }
+
+            li {
+                min-width: 10em;
+                max-width: 15em;
+            }
         }
 
         li {
-            min-width: 10em;
-            max-width: 15em;
-        }
-    }
+            position: relative;
 
-    li {
-        position: relative;
-
-        &:hover,
-        &.sfHover {
-            &>ul {
-                display: block;
-                // only transition out, not in
-                -webkit-transition: none;
-                transition: none;
+            &:hover,
+            &.sfHover {
+                &>ul {
+                    display: block;
+                    // only transition out, not in
+                    -webkit-transition: none;
+                    transition: none;
+                }
             }
         }
-    }
 
-    &>li {
-        //right align last submenu
-        &:last-child {
-            ul {
-                left: auto;
-                right: 0;
+        &>li {
+            //right align last submenu
+            &:last-child {
+                ul {
+                    left: auto;
+                    right: 0;
+                }
             }
         }
-    }
 
-    a {
-        display: block;
-        position: relative;
-        @include text-overflow();
+        a {
+            display: block;
+            position: relative;
+            @include text-overflow();
+        }
     }
 }
