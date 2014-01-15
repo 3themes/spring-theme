@@ -30,6 +30,10 @@
     ul {
         list-style: none;
     }
+
+    a {
+        @include rem-px('font-size', 1rem);
+    }
 }
 
     .nav-main--menu {
@@ -106,10 +110,6 @@
                 padding: .25em .5em;
             }
         }
-
-            .sub-menu {
-                display: none;
-            }
 
     .footer--menu {
         margin-top: 0;
