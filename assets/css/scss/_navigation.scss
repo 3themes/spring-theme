@@ -2,9 +2,10 @@
     width: 100%;
     background: $springDarkGrey;
 
-    a {
+    .menu-item a {
         color: $springLightGrey;
         font-weight: 200;
+        padding: 0 .5em;
     }
 
     li:first-child {
