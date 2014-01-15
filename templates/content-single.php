@@ -7,6 +7,7 @@
         <div class="post--content">
             <?php the_content(); ?>
         </div>
+        <?php wp_link_pages(array('before' => '<nav class="nav-pager post--pager">' . __('Pages:', 'spring'), 'after' => '</nav>')); ?>
         <footer class="post--metadata">
             <section class="post--metadata_categories">
                 <span class="post--metadata--title"><?php _e('Categories: ', 'spring'); ?></span> <?php the_category(', '); ?>
@@ -15,7 +16,6 @@
                 <?php the_tags('<span class="post--metadata--title">Tags:</span> ', ', ', ''); ?>
             </section>
         </footer>
-        <?php wp_link_pages(array('before' => '<nav class="nav-pager"><p>' . __('Pages:', 'spring'), 'after' => '</p></nav>')); ?>
         <?php comments_template('/templates/comments.php'); ?>
     </article>
 <?php endwhile; ?>
