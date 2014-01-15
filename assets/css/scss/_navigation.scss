@@ -76,6 +76,15 @@
             float: right;
         }
 
+.footer--menu {
+    margin: 1em 0 0 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+        padding: 0;
+    }
+}
 
 
 
@@ -88,6 +97,7 @@
         top: auto;
         width: auto;
         text-transform: uppercase;
+    }
 
         .menu-item {
             display: inline-block;
@@ -96,12 +106,22 @@
                 padding: .25em .5em;
             }
         }
-    }
 
             .sub-menu {
                 display: none;
             }
+
+    .footer--menu {
+        margin-top: 0;
+        
+        .menu-item:first-child {
+            a {
+                padding-left: 0;
+            }
+        }
+    }
 }
+
 
 
 
