@@ -71,7 +71,7 @@
 
     .header--blog-name {
         margin: 1em auto 0 auto;
-        @include rem-px('padding', 0, 1.5rem);
+        @include rem-px('padding', 0, 1rem);
 
         a {
             display: block;
