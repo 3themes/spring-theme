@@ -29,7 +29,7 @@ $textFontSize: .875rem;
 // Typography
 $baseFont: 'Source Sans Pro', sans-serif;
 $baseFontSize: 100%;
-$baselineHeight: 1.1em;
+$baselineHeight: 1.35em;
 $headingFont: $baseFont;
 $headingLineHeight: 1.1;
 
@@ -100,6 +100,7 @@ $buttonAltBackground2: $springLightGrey;
 
 // Tables
 $tableBackground: transparent;
+$tableCellPadding: .25em;
 $tableStripe: $springLightGrey;
 $tableFontSize: .875em;
 $tableLineHeight: 1.4em;

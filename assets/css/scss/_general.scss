@@ -73,23 +73,9 @@ body {
 }
 
 .sticky {
-    header,
-    main {
-        background: darken($bodyColor, 5%);
-    }
+    padding: 1em;
+    background: darken($bodyColor, 5%);
 
-    header {
-        padding: 1em;
-    }
-
-    main {
-        padding: 0 1em;
-    }
-
-    footer {
-        border: 1em solid darken($bodyColor, 5%);
-        border-top: 0;
-    }
 }
 
 .alert {

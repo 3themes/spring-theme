@@ -6,6 +6,16 @@
         color: $springLightGrey;
         font-weight: 200;
     }
+
+    li:first-child {
+        a {
+            padding-left: 0;
+        }
+    }
+
+    .sub-menu {
+        display: none;
+    }
 }
 
     .quicklinks-menu {
@@ -15,7 +25,6 @@
         li {
             display: inline-block;
             margin: 0;
-            padding: 0 .5em;
             list-style: none;
         }
     }
@@ -80,6 +89,10 @@
             float: right;
         }
 
+ .post--pager {
+     margin-top: 2em;
+ }
+
 .footer--menu {
     margin: 1em 0 0 0;
     padding: 0;
@@ -93,6 +106,10 @@
 
 
 @media only screen and (min-width: #{$midBreakpoint}) {
+    .quicklinks-menu {
+        padding: .5em 4em;
+    }
+
     .nav-main {
         float: right;
         position: relative;

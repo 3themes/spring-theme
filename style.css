@@ -166,7 +166,7 @@ body {
   background: transparent;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 100%;
-  line-height: 1.1em;
+  line-height: 1.35em;
   color: #58595b;
 }
 
@@ -206,7 +206,7 @@ h6 * {
 
 h1,
 .h1 {
-  margin-bottom: 0.73333em;
+  margin-bottom: 0.9em;
   color: #322e2f;
   font-size: 36px;
   font-size: 2.25rem;
@@ -219,7 +219,7 @@ h1 a,
 
 h2,
 .h2 {
-  margin-bottom: 0.73333em;
+  margin-bottom: 0.9em;
   color: #58595b;
   font-size: 28px;
   font-size: 1.75rem;
@@ -232,7 +232,7 @@ h2 a,
 
 h3,
 .h3 {
-  margin-bottom: 0.62857em;
+  margin-bottom: 0.77143em;
   color: #58595b;
   font-size: 24px;
   font-size: 1.5rem;
@@ -245,7 +245,7 @@ h3 a,
 
 h4,
 .h4 {
-  margin-bottom: 0.62857em;
+  margin-bottom: 0.77143em;
   color: #58595b;
   font-size: 16px;
   font-size: 1rem;
@@ -258,7 +258,7 @@ h4 a,
 
 h5,
 .h5 {
-  margin-bottom: 0.55em;
+  margin-bottom: 0.675em;
   color: #92948f;
   font-size: 16px;
   font-size: 1rem;
@@ -271,7 +271,7 @@ h5 a,
 
 h6,
 .h6 {
-  margin-bottom: 0.55em;
+  margin-bottom: 0.675em;
   color: 0.875em;
   font-size: 14px;
   font-size: 0.875rem;
@@ -284,14 +284,14 @@ h6 a,
 ol,
 ul,
 dl {
-  margin-bottom: 1.1em;
-  line-height: 1.375em;
+  margin-bottom: 1.35em;
+  line-height: 1.6875em;
 }
 
 p,
 address {
-  margin-bottom: 0.55em;
-  line-height: 1.375em;
+  margin-bottom: 0.675em;
+  line-height: 1.6875em;
 }
 
 small {
@@ -330,7 +330,7 @@ blockquote * {
 
 dl,
 dd {
-  margin-bottom: 0.55em;
+  margin-bottom: 0.675em;
 }
 
 dt {
@@ -399,7 +399,7 @@ sup {
   position: relative;
   font-size: .75em;
   line-height: 0;
-  vertical-align: 1.1em;
+  vertical-align: middle;
 }
 
 sup {
@@ -473,12 +473,12 @@ img {
 }
 
 figure {
-  margin-bottom: 1.1em;
+  margin-bottom: 1.35em;
 }
 
 figcaption {
   display: block;
-  margin: 0 0 1.1em 0;
+  margin: .25em 0 0 0;
   padding: 0;
   font-weight: normal;
 }
@@ -506,7 +506,7 @@ textarea,
   width: 100%;
   max-width: 30em;
   padding: 0.5em;
-  margin-bottom: 1.1em;
+  margin-bottom: 1.35em;
   background-color: white;
   border: 1px solid #d3d5cb;
   color: #58595b;
@@ -713,17 +713,17 @@ textarea[readonly] {
 table {
   height: 100%;
   width: 100%;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.675em;
   background-color: transparent;
   border-spacing: 0;
 }
 
 th,
 td {
-  padding: 0 .5em;
+  padding: 0.25em;
   vertical-align: middle;
   border-top: 1px solid #d3d5cb;
-  line-height: 1.1em;
+  line-height: 1.35em;
   text-align: left;
   font-size: .875em;
 }
@@ -834,19 +834,9 @@ body {
   font-style: italic;
 }
 
-.sticky header,
-.sticky main {
-  background: #f2f2f2;
-}
-.sticky header {
+.sticky {
   padding: 1em;
-}
-.sticky main {
-  padding: 0 1em;
-}
-.sticky footer {
-  border: 1em solid #f2f2f2;
-  border-top: 0;
+  background: #f2f2f2;
 }
 
 .alert {
@@ -1076,7 +1066,7 @@ body {
   .header--blog-name {
     float: left;
     width: 9em;
-    margin-top: -.75em;
+    margin-top: 0;
   }
 }
 @media only screen and (min-width: 83.5em) {
@@ -1096,6 +1086,12 @@ body {
   color: #d3d5cb;
   font-weight: 200;
 }
+.nav-quicklinks li:first-child a {
+  padding-left: 0;
+}
+.nav-quicklinks .sub-menu {
+  display: none;
+}
 
 .quicklinks-menu {
   margin: 0;
@@ -1104,7 +1100,6 @@ body {
 .quicklinks-menu li {
   display: inline-block;
   margin: 0;
-  padding: 0 .5em;
   list-style: none;
 }
 
@@ -1176,6 +1171,10 @@ body {
   float: right;
 }
 
+.post--pager {
+  margin-top: 2em;
+}
+
 .footer--menu {
   margin: 1em 0 0 0;
   padding: 0;
@@ -1186,6 +1185,10 @@ body {
 }
 
 @media only screen and (min-width: 48.5em) {
+  .quicklinks-menu {
+    padding: .5em 4em;
+  }
+
   .nav-main {
     float: right;
     position: relative;
@@ -1327,6 +1330,7 @@ body {
 }
 
 .single .post--metadata {
+  margin-top: .25em;
   margin-bottom: 3em;
 }
 
@@ -1501,6 +1505,13 @@ body {
     width: 33.33333%;
   }
 }
+.widget {
+  overflow: hidden;
+}
+.widget:last-child {
+  margin-bottom: 0;
+}
+
 .footer-main {
   padding: 1em;
 }
