@@ -849,6 +849,11 @@ body {
   border-top: 0;
 }
 
+.alert {
+  font-weight: bold;
+  color: #84b100;
+}
+
 .error-404 {
   *zoom: 1;
 }

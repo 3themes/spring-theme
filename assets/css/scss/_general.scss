@@ -92,6 +92,11 @@ body {
     }
 }
 
+.alert {
+    font-weight: bold;
+    color: $springGreen;
+}
+
 .error-404 {
     @include clearfix();
 
