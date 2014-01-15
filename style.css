@@ -304,6 +304,12 @@ ol {
   margin-left: 1em;
   padding: 0 0 0 1em;
 }
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-bottom: 0;
+}
 
 li {
   margin: .25em 0;

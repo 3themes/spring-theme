@@ -193,6 +193,11 @@ ul,
 ol {
     margin-left: 1em;
     padding: 0 0 0 $gutter;
+
+    ul,
+    ol {
+        margin-bottom: 0;
+    }
 }
 
     li {
