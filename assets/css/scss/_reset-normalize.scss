@@ -526,7 +526,6 @@ th,
 td {
     padding: $tableCellPadding;
     vertical-align: middle;
-    border-top:  $tableBorderWidth $tableBorderStyle $tableBorderColor;
     line-height: $baselineHeight;
     text-align: left;
     font-size: .875em;
@@ -534,6 +533,10 @@ td {
 
 th {
     font-weight: bold;
+}
+
+td {
+    border-top: $tableBorderWidth $tableBorderStyle $tableBorderColor;
 }
 
 thead th {

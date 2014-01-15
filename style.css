@@ -732,7 +732,6 @@ th,
 td {
   padding: 0.25em;
   vertical-align: middle;
-  border-top: 1px solid #d3d5cb;
   line-height: 1.35em;
   text-align: left;
   font-size: .875em;
@@ -740,6 +739,10 @@ td {
 
 th {
   font-weight: bold;
+}
+
+td {
+  border-top: 1px solid #d3d5cb;
 }
 
 thead th {
