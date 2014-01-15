@@ -125,6 +125,7 @@ audio[controls], canvas, video {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  word-wrap: break-word;
 }
 
 /*
@@ -1504,9 +1505,6 @@ body {
     float: right;
     width: 33.33333%;
   }
-}
-.widget {
-  overflow: hidden;
 }
 .widget:last-child {
   margin-bottom: 0;

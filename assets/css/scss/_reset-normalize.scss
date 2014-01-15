@@ -31,6 +31,7 @@ audio[controls], canvas, video {
 *:before,
 *:after {
     @include box-sizing();
+    word-wrap: break-word;
 }
 
 /*
