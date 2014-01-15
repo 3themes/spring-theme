@@ -1225,7 +1225,7 @@ body {
   left: .5em;
   top: 100%;
   padding: 1em;
-  background: #f4f4f2;
+  background: #d3d5cb;
   z-index: 99;
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
@@ -1236,7 +1236,7 @@ body {
 .nav-main--menu ul ul {
   top: 0;
   left: 100%;
-  background: #e8e8e4;
+  background: #c7cabd;
 }
 .nav-main--menu ul li {
   min-width: 10em;
