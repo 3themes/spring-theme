@@ -29,6 +29,20 @@
         .sidebar--rightcol {
             width: 45%;
         }
+
+    .no-flexbox {
+        .content--sidebar {
+            @include clearfix();
+        }
+
+        .sidebar--leftcol {
+            float: left;
+        }
+
+        .sidebar--rightcol {
+            float: right;
+        }
+    }
 }
 
 @media only screen and (min-width: #{$largeBreakpoint}) {

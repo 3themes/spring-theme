@@ -1232,7 +1232,7 @@ body {
     left: .5em;
     top: 100%;
     padding: 1em;
-    background: #d3d5cb;
+    background: #f4f4f2;
     z-index: 99;
     -webkit-transition: background 0.2s;
     -moz-transition: background 0.2s;
@@ -1243,7 +1243,7 @@ body {
   .nav-main--menu ul ul {
     top: 0;
     left: 100%;
-    background: #c7cabd;
+    background: #e8e8e4;
   }
   .nav-main--menu ul li {
     min-width: 10em;
@@ -1466,6 +1466,23 @@ body {
   .sidebar--rightcol {
     width: 45%;
   }
+
+  .no-flexbox .content--sidebar {
+    *zoom: 1;
+  }
+  .no-flexbox .content--sidebar:before, .no-flexbox .content--sidebar:after {
+    display: table;
+    content: "";
+  }
+  .no-flexbox .content--sidebar:after {
+    clear: both;
+  }
+  .no-flexbox .sidebar--leftcol {
+    float: left;
+  }
+  .no-flexbox .sidebar--rightcol {
+    float: right;
+  }
 }
 @media only screen and (min-width: 64em) {
   .content--sidebar {
@@ -1523,6 +1540,7 @@ body {
   bottom: 0;
   width: 2em;
   padding: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background: white url(assets/img/search-icon.png) no-repeat 50% 45%;
   border: 1px solid #d3d5cb;
   border-left: 0;

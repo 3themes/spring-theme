@@ -67,6 +67,7 @@ sizeTest(false);
 function sizeTest(resize) {
     if(Modernizr.mq('(min-width: 48.5em) and (max-width: 62.5em)')) {
         reorderWidgets();
+        console.log('order widgets');
     } else if (resize) {
         unorderWidgets();
     }
