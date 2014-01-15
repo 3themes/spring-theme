@@ -500,6 +500,7 @@ input[type="email"],
 input[type="number"],
 input[type="search"],
 input[type="file"],
+input[type="password"],
 select,
 textarea,
 .textbox {
@@ -532,6 +533,8 @@ input[type="search"]:active,
 input[type="search"]:focus,
 input[type="file"]:active,
 input[type="file"]:focus,
+input[type="password"]:active,
+input[type="password"]:focus,
 select:active,
 select:focus,
 textarea:active,
@@ -1275,7 +1278,7 @@ body {
 }
 .post {
   *zoom: 1;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
 }
 .post:before, .post:after {
   display: table;
