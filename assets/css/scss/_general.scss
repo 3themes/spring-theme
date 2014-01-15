@@ -129,6 +129,21 @@ body {
     .content {
         padding: 0 4em;
     }
+
+    .open-the-menu {
+        .wrapper {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .open-the-sidebar {
+        .wrapper {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
 }
 
 @media only screen and (min-width: #{$largeBreakpoint}) {
