@@ -5,6 +5,7 @@ body {
 
 .wrapper {
     position: relative;
+    min-height: 100%;
     margin-top: -1px;
     padding-top: 1px;
     background: $bodyColor;
