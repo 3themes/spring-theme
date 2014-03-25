@@ -1487,10 +1487,6 @@ body {
   padding: 2em;
 }
 
-.widget {
-  margin-bottom: 1.5em;
-}
-
 @media only screen and (max-width: 48.5em) {
   .open-the-sidebar .content--sidebar {
     height: 100%;
@@ -1573,6 +1569,9 @@ body {
     float: right;
     width: 33.33333%;
   }
+}
+.widget {
+  margin-bottom: 1.5em;
 }
 .widget:last-child {
   margin-bottom: 0;
