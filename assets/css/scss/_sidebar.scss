@@ -3,7 +3,7 @@
     left: 100%;
     top: 0;
     width: 80%;
-    padding: 5%;
+    padding: 2em;
 }
 
     .widget {
@@ -37,14 +37,22 @@
         left: auto;
         top: auto;
         width: 100%;
-        margin-top: 2.5%;
-        padding: 2.5%;
+        margin-top: 2em;
+        padding: 2em;
         border: 1px solid $lightGrey;
     }
 
         .sidebar--leftcol,
         .sidebar--rightcol {
-            width: 45%;
+            width: 50%;
+        }
+
+        .sidebar--leftcol {
+            padding-right: 1em;
+        }
+
+        .sidebar--rightcol {
+            padding-left: 1em;
         }
 
     .no-flexbox {
