@@ -58,13 +58,14 @@ function unorderWidgets() {
         matching = false;
         var widgets = document.querySelectorAll('.widget'),
             widgetsLength = widgets.length,
-            sidebar = document.querySelectorAll('.content--sidebar')[0],
-            node;
+            sidebar = document.querySelectorAll('.content--sidebar')[0];
+
+        console.log(widgets);
 
         for(var i = 0; i < widgetsLength; i++) {
             for(var j = 0; j < widgetsLength; j++) {
-                if(j === i) {
-                    node = widgets[j];
+                var orderNbr = widgets[j].getAttribute('data-order');
+                if(orderNbr == i) {
                     sidebar.appendChild(widgets[j]);
                 }
             }
