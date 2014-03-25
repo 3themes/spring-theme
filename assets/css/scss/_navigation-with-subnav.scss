@@ -12,7 +12,7 @@
             display: none;
             left: .5em;
             top: 100%;
-            padding: 1em;
+            padding: .5em;
             background: $springWhite;
             z-index: 99;
             @include transition(background .2s);
@@ -20,7 +20,7 @@
 
             ul {
                 top: 0;
-                left: 100%;
+                left: 90%;
                 background: darken($springWhite, 5%);
             }
 

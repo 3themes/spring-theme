@@ -1222,7 +1222,7 @@ body {
     right: 100%;
     top: 0;
     width: 80%;
-    padding: 1em;
+    padding: 2em;
   }
 
   .open-the-menu .nav-main {
@@ -1283,7 +1283,7 @@ body {
     display: none;
     left: .5em;
     top: 100%;
-    padding: 1em;
+    padding: .5em;
     background: #f4f4f2;
     z-index: 99;
     -webkit-transition: background 0.2s;
@@ -1294,7 +1294,7 @@ body {
   }
   .nav-main--menu ul ul {
     top: 0;
-    left: 100%;
+    left: 90%;
     background: #e8e8e4;
   }
   .nav-main--menu ul li {
