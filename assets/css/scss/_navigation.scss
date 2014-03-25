@@ -106,6 +106,30 @@
 
 
 
+
+@media only screen and (max-width: #{$midBreakpoint}) {
+    .nav-main {
+        position: absolute;
+        right: 100%;
+        top: 0;
+        width: 80%;
+        padding: 1em;
+    }
+
+    .open-the-menu {
+        .nav-main {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .admin-bar .nav-main {
+            padding-bottom: 4em;
+        }
+    }
+}
+
+
+
 @media only screen and (min-width: #{$midBreakpoint}) {
     .quicklinks-menu {
         padding: .5em 4em;
@@ -121,13 +145,13 @@
         text-transform: uppercase;
     }
 
-        .menu-item {
-            display: inline-block;
+            .menu-item {
+                display: inline-block;
 
-            & > a {
-                padding: .25em .5em;
+                & > a {
+                    padding: .25em .5em;
+                }
             }
-        }
 
     .footer--menu {
         margin-top: 0;

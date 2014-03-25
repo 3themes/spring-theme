@@ -10,6 +10,23 @@
         margin-bottom: 1.5em;
     }
 
+
+
+@media only screen and (max-width: #{$midBreakpoint}) {
+    .open-the-sidebar {
+        .content--sidebar {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .admin-bar .content--sidebar {
+            padding-bottom: 4em;
+        }
+    }
+}
+
+
+
 @media only screen and (min-width: #{$midBreakpoint}) {
     //approximate min-width: 768px
     .content--sidebar {
@@ -44,6 +61,8 @@
         }
     }
 }
+
+
 
 @media only screen and (min-width: #{$largeBreakpoint}) {
     //approximate min-width: 992px

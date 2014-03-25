@@ -13,21 +13,6 @@ body {
     @include rem-px('font-size', $textFontSize);
 }
 
-.open-the-menu {
-    .wrapper {
-        width: 100%;
-        margin-left: 80%;
-        margin-right: -80%;
-    }
-}
-
-.open-the-sidebar {
-    .wrapper {
-        margin-left: -80%;
-        margin-right: 80%;
-    }
-}
-
 .content {
     padding: 0 1.5em;
 }
@@ -92,6 +77,44 @@ body {
         margin: 0 0 1em 1em;
     }
 }
+
+
+
+@media only screen and (max-width: #{$midBreakpoint}) {
+    .open-the-menu {
+        overflow: hidden;
+
+        body {
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            margin-left: 80%;
+            margin-right: -80%;
+        }
+    }
+
+    .open-the-sidebar {
+        overflow: hidden;
+
+        body {
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            margin-left: -80%;
+            margin-right: 80%;
+        }
+    }
+}
+
+
 
 @media only screen and (min-width: #{$smallBreakpoint}) {
     .alignright {

@@ -17,7 +17,7 @@
   width: 100%;
 }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 62.5em) {
   .columns-1 {
     float: left;
     width: 8.33333%;
@@ -780,6 +780,7 @@ body {
 
 .wrapper {
   position: relative;
+  min-height: 100%;
   margin-top: -1px;
   padding-top: 1px;
   background: white;
@@ -790,17 +791,6 @@ body {
   transition: margin-left .2s ease-out, margin-right .2s ease-out, left .2s ease-out;
   font-size: 14px;
   font-size: 0.875rem;
-}
-
-.open-the-menu .wrapper {
-  width: 100%;
-  margin-left: 80%;
-  margin-right: -80%;
-}
-
-.open-the-sidebar .wrapper {
-  margin-left: -80%;
-  margin-right: 80%;
 }
 
 .content {
@@ -872,6 +862,35 @@ body {
   margin: 0 0 1em 1em;
 }
 
+@media only screen and (max-width: 48.5em) {
+  .open-the-menu {
+    overflow: hidden;
+  }
+  .open-the-menu body {
+    overflow: hidden;
+    height: 100%;
+  }
+  .open-the-menu .wrapper {
+    width: 100%;
+    height: 100%;
+    margin-left: 80%;
+    margin-right: -80%;
+  }
+
+  .open-the-sidebar {
+    overflow: hidden;
+  }
+  .open-the-sidebar body {
+    overflow: hidden;
+    height: 100%;
+  }
+  .open-the-sidebar .wrapper {
+    width: 100%;
+    height: 100%;
+    margin-left: -80%;
+    margin-right: 80%;
+  }
+}
 @media only screen and (min-width: 30.5em) {
   .alignright {
     float: right;
@@ -912,7 +931,7 @@ body {
     margin-right: 0;
   }
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 62.5em) {
   .content {
     display: -ms-flexbox;
     -ms-box-orient: horizontal;
@@ -964,7 +983,6 @@ body {
   }
 }
 .header-main {
-  position: relative;
   margin-bottom: 2em;
 }
 
@@ -1025,8 +1043,8 @@ body {
   content: ' ';
   display: block;
   height: 100%;
-  border-left: 11px solid white;
-  width: 21px;
+  border-left: 10px solid white;
+  width: 19px;
   border-right: 6px solid white;
 }
 
@@ -1198,6 +1216,23 @@ body {
   padding: 0;
 }
 
+@media only screen and (max-width: 48.5em) {
+  .nav-main {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 80%;
+    padding: 1em;
+  }
+
+  .open-the-menu .nav-main {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .open-the-menu .admin-bar .nav-main {
+    padding-bottom: 4em;
+  }
+}
 @media only screen and (min-width: 48.5em) {
   .quicklinks-menu {
     padding: .5em 4em;
@@ -1456,6 +1491,15 @@ body {
   margin-bottom: 1.5em;
 }
 
+@media only screen and (max-width: 48.5em) {
+  .open-the-sidebar .content--sidebar {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .open-the-sidebar .admin-bar .content--sidebar {
+    padding-bottom: 4em;
+  }
+}
 @media only screen and (min-width: 48.5em) {
   .content--sidebar {
     position: relative;
@@ -1505,7 +1549,7 @@ body {
     float: right;
   }
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 62.5em) {
   .content--sidebar {
     display: block;
     width: 31.33333333333%;
