@@ -1,0 +1,7 @@
+/*
+ * Temporary fix for https://core.trac.wordpress.org/ticket/26609
+ */
+
+html #wpadminbar {
+    position: fixed;
+}
