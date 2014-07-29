@@ -11,6 +11,13 @@
 
     <!-- ICONS -->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
+    <!-- FIRST FOUR ARE FOR IOS7 -->
+    <link href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+
+    <!-- LEGACY IOS6- REMOVE IF UNNECESSARY -->
     <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
     <!-- <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-precomposed.png"> -->
     <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
